@@ -6,6 +6,42 @@
 
 
 
+body, html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+  @keyframes border-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  
+  .animate-border {
+    background-size: 200% 200%;
+    animation: border-animation 3s linear infinite;
+  }
+  
+
+
+
+
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }

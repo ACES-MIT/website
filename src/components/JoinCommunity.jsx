@@ -2,25 +2,40 @@ import React from 'react';
 import  '../index.css';
 
 const Community = () => {
-return (
+  return (
     <div className="relative min-h-screen bg-gray-900 overflow-hidden">
-        {/*background*/}
-        <div className="flex items-center justify-center min-h-screen bg-black w-full h-full rounded-lg overflow-hidden" style={{ backgroundImage: 'url(https://framerusercontent.com/images/ETRqNWWMBEeXF5D05OggGRFDeec.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {/*content*/}
+      {/* Background */}
+      <div
+        className="flex items-center justify-center min-h-screen bg-black w-full h-full rounded-lg overflow-hidden"
+        style={{
+          backgroundImage: 'url(https://framerusercontent.com/images/ETRqNWWMBEeXF5D05OggGRFDeec.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
-            {/*join button*/}
-            <button className="bg-[#0c0a0ae6] text-white px-8 py-3 rounded-full border border-gray-700 shadow-lg hover:bg-gray-800 transition-colors duration-300 flex items-center space-x-2 p-20 animate-bounce">
-                <span className="w-3 h-3 rounded-full bg-green-500"></span>
-                <span className="text-xl tracking-wider">Join our Community</span>
-            </button>
-            {/*email text*/}
-            <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-center mt-8 hover:scale-110 transition-transform duration-200 tracking-wide">
-                parliamentofaces2018@gmail.com
-            </h1>
+          
+          {/* Join Button */}
+          <div className="flex justify-center sm:relative sm:rounded-full sm:p-[2px] sm:bg-gradient-to-r sm:from-transparent sm:via-white to-transparent animate-border
+              transition-all duration-300 ease-in-out text-center
+              opacity-100 sm:opacity-100 max-h-full sm:max-h-full mt-0 mb-0">
+            <a className="flex items-center justify-center bg-[#252525] text-white text-base sm:text-sm md:text-lg px-6 py-3 sm:py-2 rounded-full shadow-inner w-full sm:w-auto md:w-auto" href="https://chat.whatsapp.com/LSoSVdHx0cz1FfvCh3eDqk">
+              <span className="flex items-center justify-center h-4 w-4 mr-2">
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-blink "></span>
+              </span>
+              Join our Community
+            </a>
+          </div>
+
+          {/* Email Text */}
+          <h1 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-8 text-center mt-8 hover:scale-110 transition-transform duration-200 tracking-wide">
+            parliamentofaces2018@gmail.com
+          </h1>
         </div>
-        </div>
+      </div>
     </div>
-);
+  );
 };
 
 export default Community;

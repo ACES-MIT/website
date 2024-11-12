@@ -18,7 +18,7 @@ class EventCard extends React.Component {
 
   render() {
     return (
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
           <div
             key="front"
@@ -61,7 +61,7 @@ class EventCard extends React.Component {
                 Additional Info
               </div>
               <Link to="/register">
-                <button className="bg-[rgb(35,35,35)] border border-[rgb(40,40,40)] w-[60%] h-[15%] font-sf-pro font-semibold text-lg text-white py-2 px-4 rounded-full mt-4">
+                <button className="bg-[#252525] border border-[#252525]  font-sf-pro font-semibold text-lg text-white py-2 px-4 rounded-full mt-4">
                   Register
                 </button>
               </Link>

@@ -42,8 +42,11 @@ const ContactPage = () => {
         <p className="text-sm md:text-base lg:text-lg text-gray-300 mb-6 md:mb-10">
           Let's connect and bring your vision to life in the Computer Science and Engineering community. We're excited to collaborate with you and provide support to turn your ideas into reality.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-start gap-5 mt-5">
-          <a href="mailto:parliamentofaces2018@gmail.com" className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid">
+
+        {/* First Section - Let's Collaborate */}
+        <div className="flex flex-col items-center gap-5 mt-5">
+          <a href="mailto:parliamentofaces2018@gmail.com" 
+             className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid w-fit">
             Let's Collaborate
           </a>
           <form className="flex flex-col gap-3 w-full max-w-sm">
@@ -56,7 +59,12 @@ const ContactPage = () => {
           </form>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-start gap-5 mt-8 md:mt-10">
+        {/* Second Section - Post a Blog */}
+        <div className="flex flex-col items-center gap-5 mt-8 md:mt-10">
+          <a href="mailto:parliamentofaces2018@gmail.com" 
+             className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid w-fit">
+            Post a Blog
+          </a>
           <form className="flex flex-col gap-3 w-full max-w-sm">
             <input type="text" placeholder="Name" required className="bg-[#111111] text-white p-3 rounded-lg w-full"/>
             <input type="email" placeholder="Email" required className="bg-[#111111] text-white p-3 rounded-lg w-full"/>
@@ -65,12 +73,10 @@ const ContactPage = () => {
               Request a Blog
             </button>
           </form>
-          <a href="mailto:parliamentofaces2018@gmail.com" className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid">
-            Post a Blog
-          </a>
         </div>
       </div>
 
+      {/* Testimonials Section */}
       <div className="relative max-w-2xl w-full text-center overflow-hidden py-5 md:py-10">
         {testimonials.map((testimonial, index) => (
           <div

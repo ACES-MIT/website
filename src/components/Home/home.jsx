@@ -38,7 +38,8 @@ function Home() {
   return (
 
     <div>
-      <GradientBox position={{ top: '-115px', left: '-110px' }} width="250px" height="250px" color="#FF00E6"/>
+      {/* <GradientBox position={{ top: '-115px', left: '-110px' }} width="250px" height="250px" color="#FF00E6"/> */}
+      <GradientBox position={{ top: '-115px', left: '-110px' }} width="250px" height="250px" colorStops={[ ['#FF00E6', '0%'], ['rgba(250, 47, 230, 0.5)', '30%'], ['rgba(0, 0, 0, 0)', '60%'],['rgba(0, 0, 0, 0)','100%'] ]}  />
 
       
        <div className="min-h-screen bg-[#0e0d0d] text-white flex flex-col items-center">

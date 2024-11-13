@@ -8,7 +8,7 @@ const OtherTeamsSection = ({ title, members }) => {
 
   useEffect(() => {
     if (swipeDirection) {
-      const timer = setTimeout(() => setSwipeDirection(''), 500); // Reset animation after 500ms
+      const timer = setTimeout(() => setSwipeDirection(''), 300); // Reset animation after 500ms
       return () => clearTimeout(timer);
     }
   }, [swipeDirection]);
@@ -31,7 +31,7 @@ const OtherTeamsSection = ({ title, members }) => {
         </span>
       </div>
       <div className="relative flex justify-center items-center w-full max-w-xs md:max-w-sm lg:max-w-md">
-        <div className={`transition-all duration-500 ${swipeDirection}`}>
+        <div className={`transition-transform transition-opacity duration-500 ${swipeDirection}`}>
           <TeamMemberCard member={members[currentIndex]} />
         </div>
         <button

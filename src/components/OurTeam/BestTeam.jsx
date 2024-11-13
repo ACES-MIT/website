@@ -3,8 +3,6 @@ import './BestTeam.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 function BestTeam() {
@@ -133,11 +131,29 @@ function BestTeam() {
           <div className="box box7"></div>
           <div className="box box8"></div>
           <div className="content">
-            <h1>Team of the month</h1> 
-            <h3>Technical Team</h3>
+            <div className='flex items-center justify center flex-col' >
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Team of the Month</h1>
+          <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-2">Technical Team</h3>
             
-            <div className="loader">  </div>
-            <button> <div className="s-circle"></div> <div className="circle"></div> View Team </button>
+            {/* <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+              View Team
+            </button> */}
+            <div className="flex items-center justify-center md:rounded-full md:p-[2px] sm:bg-gradient-to-r md:from-transparent md:via-white to-transparent animate-border static">
+  <button className="flex items-center bg-[#252525] text-lg text-white px-10 py-3 rounded-full shadow-inner mx-auto">
+    <span className="flex h-4 w-3 mr-2">
+      <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-blink"></span>
+    </span>
+    Recent Event
+  </button>
+</div>
+
+
+            
+            
+
+
+
+          </div>
             
             </div>
 

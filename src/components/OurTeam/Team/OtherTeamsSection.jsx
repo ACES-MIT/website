@@ -8,7 +8,7 @@ const OtherTeamsSection = ({ title, members }) => {
 
   useEffect(() => {
     if (swipeDirection) {
-      const timer = setTimeout(() => setSwipeDirection(''), 300); // Reset animation after 500ms
+      const timer = setTimeout(() => setSwipeDirection(''), 500); 
       return () => clearTimeout(timer);
     }
   }, [swipeDirection]);

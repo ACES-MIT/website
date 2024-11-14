@@ -9,9 +9,9 @@ import StatsSection from './compenents/statusCard/status';
 import Faculty from './compenents/faculty/Label';
 import useIntersectionObserver from '../useIntersectionObserver';
 import GradientBox from '../gradient';
-
+import { useNavigate } from 'react-router-dom';
 function Home() {
-  
+  const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
   const logoRef = useRef(null);
@@ -58,7 +58,8 @@ function Home() {
         <p className="text-gray-400 max-w-md mx-auto">
           Committed to the principles of Unity, Support, and Dedication with years of hands-on experience in the industry.
         </p>
-        <a href="#" className="mt-4 inline-flex items-center text-white font-semibold hover:underline">
+        <a href="#" className="mt-4 inline-flex items-center text-white font-semibold hover:underline"
+            onClick={() => navigate('/about')} >
           More About Us →
         </a>
       </main>

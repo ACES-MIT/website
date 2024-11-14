@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function EventRegistrationForm() {
+    const navigate = useNavigate();
     return (
         <div className="text-left min-h-screen flex items-center justify-center bg-black text-white p-4 ">
             <div className="w-full max-w-2xl md:p-8 p-4 space-y-6 mt-24" >
-                <button className="bg-[#111111] rounded-full p-3 no-underline text-purple-500 hover:text-purple-300 mb-4 text-base">
+                <button className="bg-[#111111] rounded-full p-3 no-underline text-purple-500 hover:text-purple-300 mb-4 text-base"
+                onClick={() => navigate('/')}>
                     &lt; Back to home
                 </button>
                 <p className="text-sm font-semibold mb-4 flex items-center">

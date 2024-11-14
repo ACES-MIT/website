@@ -12,11 +12,11 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         swipeLeft: {
-          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '0%': { transform: 'translateX(20%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         swipeRight: {
-          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '0%': { transform: 'translateX(-20%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         slideIn: {

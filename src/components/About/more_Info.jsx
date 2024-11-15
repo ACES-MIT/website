@@ -24,7 +24,7 @@ const gradientConfig2 = {
       {/* <GradientBox {...gradientConfig2} /> */}
       <div className="flex justify-center md:justify-start mb-6">
         <button className="mt-9 ml-1 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white border-opacity-25 
-                 sm:w-[150px] md:w-[120px] lg:w-auto xl:w-auto md:px-6 sm:px-10" >
+                 sm:w-[150px] md:w-[120px] lg:w-auto xl:w-auto md:px-6 sm:px-10 px-10" >
           More Info
         </button>
         

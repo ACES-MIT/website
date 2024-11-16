@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { NodeMailer } from "../service/API";
 
 function EventRegistrationForm() {
   const routePath = useLocation();
+  const navigate = useNavigate(); // Add useNavigate for navigation
+
   const onTop = () => {
     window.scrollTo(0, 0);
   };
   useEffect(() => {
     onTop();
   }, [routePath]);
+
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Phone, setPhone] = useState("");
@@ -21,19 +24,21 @@ function EventRegistrationForm() {
       let data = { name: Name, email: Email, number: Phone };
       NodeMailer(data);
       // console.log(response);
-      // alert("sub");
       setName("");
       setEmail("");
       setPhone("");
       setEntroll("");
-      setDiv("");
+      setDiv(""); 
+      alert("Registration Successful!");
+      navigate("/"); // Navigate to home page
     }
   };
 
   return (
     <div className="text-left min-h-screen flex items-center justify-center bg-black text-white p-4 ">
       <div className="w-full max-w-2xl md:p-8 p-4 space-y-6 mt-24">
-        <button className="bg-[#111111] rounded-full p-3 no-underline text-purple-500 hover:text-purple-300 mb-4 text-base">
+        <button className="bg-[#111111] rounded-full p-3 no-underline text-purple-500 hover:text-purple-300 mb-4 text-base"
+        onClick={() => navigate("/")}>
           &lt; Back to home
         </button>
         <p className="text-sm font-semibold mb-4 flex items-center">
@@ -44,12 +49,19 @@ function EventRegistrationForm() {
           Registration for Dil Chahta Hai
         </h1>
 
-        <form className="space-y-4">
+        <form
+          className="space-y-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            Submit(Name, Email, Phone, Entroll, Div);
+          }}
+        >
           <div>
             <label className="block text-sm font-medium">Name</label>
             <input
               type="text"
               placeholder="Full name"
+              value={Name}
               onChange={(e) => {
                 setName(e.target.value);
               }}
@@ -63,6 +75,7 @@ function EventRegistrationForm() {
             <input
               type="email"
               placeholder="Mail Id"
+              value={Email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -76,6 +89,7 @@ function EventRegistrationForm() {
             <input
               type="tel"
               placeholder="Phone Number"
+              value={Phone}
               onChange={(e) => {
                 setPhone(e.target.value);
               }}
@@ -92,6 +106,7 @@ function EventRegistrationForm() {
               <input
                 type="text"
                 placeholder="Enrollment Number"
+                value={Entroll}
                 onChange={(e) => {
                   setEntroll(e.target.value);
                 }}
@@ -105,6 +120,7 @@ function EventRegistrationForm() {
               <input
                 type="text"
                 placeholder="Division"
+                value={Div}
                 onChange={(e) => {
                   setDiv(e.target.value);
                 }}
@@ -116,7 +132,6 @@ function EventRegistrationForm() {
 
           <button
             type="submit"
-            onClick={Submit(Name, Email, Phone, Entroll, Div)}
             className="w-full py-2 mt-6 bg-white text-black font-bold rounded-full text-base hover:bg-purple-500 hover:text-white transition duration-200"
           >
             Submit

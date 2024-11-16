@@ -42,7 +42,7 @@ const StatItem = ({ number, label }) => (
 
 const StatsSection = () => {
   return (
-    <div className="bg-[#0e0d0d] text-white py-16 px-4 sm:px-6">
+    <div className="bg-black text-white py-16 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
     <div className="border-t border-t-white border-opacity-25  rounded-3xl">
       {/* Height for different screen sizes */}

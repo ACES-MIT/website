@@ -96,7 +96,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#0e0d0d] flex justify-center items-center w-full min-h-screen gap-28 flex-wrap">
+      <div className="bg-[#0e0d0d]flex justify-center items-center w-full min-h-screen gap-28 flex-wrap">
         <Event />
       </div>
 

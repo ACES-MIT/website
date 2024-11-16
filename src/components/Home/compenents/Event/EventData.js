@@ -3,7 +3,7 @@ import Try from "../../../../assets/try.jpg";
 export const EventData = [
   {
     Name: "Dil chahta hai",
-    About: "",
+    About: "Donation Drive",
     Date: "19-10-2024",
     Details: "Dil chahta hai",
     MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
@@ -13,7 +13,7 @@ export const EventData = [
   },
   {
     Name: "Vision Voyage",
-    About: "",
+    About: "Roadmap for students",
     Date: "22-9-2024",
     Details: "Vision Voyage",
     MInfo: "This event aimed at guiding first-year  ",

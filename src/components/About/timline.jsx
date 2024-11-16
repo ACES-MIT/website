@@ -24,68 +24,68 @@ const Timeline = () => {
   const [timelineItems, setTimelineItems] = useState([
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Hardware Hackathon",
+      Description: "engaged deeply with the world of circuits and sensors",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Visit to Lillian School",
+      Description: "gained insights into the basics of sign language ",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Software Hackathon",
+      Description: "Hackathon showcased their coding prowess by developing creative and impactful software applications",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Code Gyan",
+      Description: "focused on deepening participants’ understanding of programming through the sharing of valuable knowledge and skills",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Lockdown Tech Events",
+      Description: "successfully conducted numerous online tech events and webinars",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Illuminare",
+      Description: "brought together key clubs and organizations to introduce themselves and showcase their unique missions ",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "C++ Bootcamp",
+      Description: "organized an in-depth C++ Bootcamp",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "SHAKTI",
+      Description: "A vibrant cultural event celebrating the essence of female energy, featuring powerful performances ",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Code Triathlon",
+      Description: "participants raced against the clock to solve three challenging coding problems",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Web 3 Workshop",
+      Description: "This workshop provided attendees with valuable insights into Web 3.0 technology",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Vision Voyage",
+      Description: "This event aimed at guiding first-year students by creating a comprehensive roadmap for their academic and technical journey",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Teacher’s Day Celebration",
+      Description: "Hosted a special event in honor of Teacher’s Day",
     },
     {
       year: 2022,
-      Title: "Coding the Future",
-      Description: "This is the description for coding the future",
+      Title: "Dil chahta hai ",
+      Description: "Organized a heartwarming charity event to make a difference in the lives of those who need it most.",
     },
     // {
     //   year: 2022,
@@ -166,8 +166,8 @@ const Timeline = () => {
               {/* Timeline for desktop */}
               <div className="relative w-full px-4 md:px-8">
                 <div className="flex justify-between items-center w-full">
-                  <span className="text-lg font-bold">2019</span>
                   <span className="text-lg font-bold">2020</span>
+                  <span className="text-lg font-bold">2021</span>
                   <span className="text-lg font-bold">2022</span>
                   <span className="text-lg font-bold">2023</span>
                   <span className="text-lg font-bold">2024</span>

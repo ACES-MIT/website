@@ -32,11 +32,11 @@ function Home() {
     if (logoElement && textElement) {
       setTimeout(() => {
         logoElement.classList.add("animate-riseUpSlow");
-      }, 500); // 0.5 seconds delay
+      }, 10); // 0.5 seconds delay
 
       setTimeout(() => {
         textElement.classList.add("animate-riseUpSlow");
-      }, 600); // 3 seconds delay
+      }, 10); // 3 seconds delay
     }
   }, []);
 
@@ -87,9 +87,9 @@ function Home() {
           </a>
         </main>
       </div>
-      <div className="bg-[#0e0d0d] text-white py-16 px-6">
+      <div className="felx justify-center bg-[#0e0d0d] text-white py-16 px-6">
         <div className="container mx-auto max-w-6xl rounded-3xl">
-          <div className="border-t border-t-white border-opacity-25  rounded-3xl">
+          <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
             <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
               Upcoming Events
             </h3>
@@ -102,7 +102,7 @@ function Home() {
 
       <div className="bg-[#0e0d0d] text-white py-16 px-6">
         <div className="container mx-auto max-w-6xl rounded-3xl">
-          <div className="border-t border-t-white border-opacity-25  rounded-3xl">
+          <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
             <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
               Our Faculty coordinator
             </h3>

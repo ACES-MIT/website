@@ -30,13 +30,13 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com',
+      href: 'https://www.linkedin.com/company/aces-mitadt/',
       icon: LinkedInIcon,
       hoverColor: 'hover:text-blue-500'
     },
     {
       name: 'WhatsApp',
-      href: 'https://wa.me/yourwhatsappnumber',
+      href: 'https://chat.whatsapp.com/LSoSVdHx0cz1FfvCh3eDqk',
       icon: WhatsAppIcon,
       hoverColor: 'hover:text-green-500'
     }

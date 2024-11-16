@@ -11,11 +11,12 @@ const CoreTeamSection = ({ members }) => {
         </span>
       </div>
       
-      <div className="flex  justify-center gap-6 sm:gap-8 lg:gap-12 flex-col sm:flex-row">
-        {members.map((member, index) => (
-          <TeamMemberCard key={index} member={member} />
-        ))}
-      </div>
+      <div className="flex justify-center gap-6 sm:gap-8 lg:gap-12">
+  {members.map((member, index) => (
+    <TeamMemberCard key={index} member={member} />
+  ))}
+</div>
+
     </section>
   );
 };

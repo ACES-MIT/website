@@ -1,6 +1,6 @@
 import CoreTeamSection from "./Team/CoreTeamSection";
 import OtherTeamsSection from "./team/OtherTeamsSection";
-import { coreTeamMembers, technicalTeamMembers } from "./team/teamData";
+import { coreTeamMembers, technicalTeamMembers,designTeamMembers,CulturalTeamMembers,FinanceTeamMembers,ContentTeamMembers,PromotionsTeamMembers,SocialMediaTeamMembers} from "./team/teamData";
 import TeamHeader from "./TeamHeader";
 import BestTeam from "./BestTeam";
 import { useEffect } from "react";
@@ -23,7 +23,31 @@ const OurTeam = () => {
         <OtherTeamsSection
           title="Technical Team"
           members={technicalTeamMembers}
+          />
+       <OtherTeamsSection
+          title="Design Team"
+          members={designTeamMembers}
         />
+            <OtherTeamsSection
+          title="Promotions Team"
+          members={PromotionsTeamMembers}
+          />
+          <OtherTeamsSection
+          title="Content Team"
+          members={ContentTeamMembers}
+          />
+          <OtherTeamsSection
+          title="Finance Team"
+          members={FinanceTeamMembers}
+          />
+          <OtherTeamsSection
+          title="Cultural Team"
+          members={CulturalTeamMembers}
+          />
+          <OtherTeamsSection
+          title="Social Media Team"
+          members={SocialMediaTeamMembers}
+          />
       </div>
     </div>
   );

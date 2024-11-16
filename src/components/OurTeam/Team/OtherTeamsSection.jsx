@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TeamMemberCard from './TeamMemberCard';
-import { coreTeamMembers, technicalTeamMembers } from './teamData';
+import { coreTeamMembers, technicalTeamMembers,designTeamMembers,CulturalTeamMembers,FinanceTeamMembers,ContentTeamMembers,PromotionsTeamMembers,SocialMediaTeamMembers} from './teamData';
 
 const OtherTeamsSection = ({ title, members }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -8,7 +8,7 @@ export const EventData = [
     Date: "19-10-2024",
     Details: "DIL CHAHTA HAI",
     MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
-    AInfo: "of those who need it most.o",
+    AInfo: "of those who need it most",
     Link: "/register",
     Image: Dil,
   },

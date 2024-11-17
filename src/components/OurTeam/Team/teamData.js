@@ -156,7 +156,7 @@ export const PromotionsTeamMembers = [
 {
     name: 'Riya Chavan',
     role: 'Promotions Team Member',
-    image: '/images/Riya Chavan'
+    image: 'images/Riya Chavan.jpeg'
 },
 
 {

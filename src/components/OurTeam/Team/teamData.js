@@ -20,7 +20,7 @@ export const coreTeamMembers = [
   {
     name: 'Srushti Kulkarni',
     role: 'Treasurer',
-    image: '/images/Srushti Kulkarni (1).jpg'
+    image: '/images/srushti Kulkarni.jpg'
   }
   // {
   //   name: 'Muskan Rai',

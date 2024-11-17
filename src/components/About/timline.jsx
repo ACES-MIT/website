@@ -24,67 +24,67 @@ const Timeline = () => {
   const [timelineItems, setTimelineItems] = useState([
     {
       year: 2022,
-      Title: "Hardware Hackathon",
-      Description: "engaged deeply with the world of circuits and sensors",
+      Title: "HARDWARE HACKATHON",
+      Description: "Engaged deeply with the world of circuits and sensors.",
     },
     {
       year: 2022,
-      Title: "Visit to Lillian School",
-      Description: "gained insights into the basics of sign language ",
+      Title: "VISIT TO LILLIAN SCHOOL",
+      Description: "Gained insights into the basics of sign language.",
     },
     {
       year: 2022,
-      Title: "Software Hackathon",
-      Description: "Hackathon showcased their coding prowess by developing creative and impactful software applications",
+      Title: "SOFTWARE HACKATHON",
+      Description: "Hackathon showcased their coding prowess by developing creative and impactful software applications.",
     },
     {
       year: 2022,
-      Title: "Code Gyan",
-      Description: "focused on deepening participants’ understanding of programming through the sharing of valuable knowledge and skills",
+      Title: "CODE GYAN",
+      Description: "Focused on deepening participants’ understanding of programming through the sharing of valuable knowledge and skills.",
     },
     {
       year: 2022,
-      Title: "Lockdown Tech Events",
-      Description: "successfully conducted numerous online tech events and webinars",
+      Title: "LOCKDOWN TECH EVENTS",
+      Description: "Successfully conducted numerous online tech events and webinars.",
     },
     {
       year: 2022,
-      Title: "Illuminare",
-      Description: "brought together key clubs and organizations to introduce themselves and showcase their unique missions ",
+      Title: "ILLUMINARE",
+      Description: "Brought together key clubs and organizations to introduce themselves and showcase their unique missions.",
     },
     {
       year: 2022,
-      Title: "C++ Bootcamp",
-      Description: "organized an in-depth C++ Bootcamp",
+      Title: "C++ BOOTCAMP",
+      Description: "Organized an in-depth C++ Bootcamp.",
     },
     {
       year: 2022,
       Title: "SHAKTI",
-      Description: "A vibrant cultural event celebrating the essence of female energy, featuring powerful performances ",
+      Description: "A vibrant cultural event celebrating the essence of female energy, featuring powerful performances.",
     },
     {
       year: 2022,
-      Title: "Code Triathlon",
-      Description: "participants raced against the clock to solve three challenging coding problems",
+      Title: "CODE TRIATHLON",
+      Description: "Participants raced against the clock to solve three challenging coding problems.",
     },
     {
       year: 2022,
-      Title: "Web 3 Workshop",
-      Description: "This workshop provided attendees with valuable insights into Web 3.0 technology",
+      Title: "WEB 3 WORKSHOP",
+      Description: "This workshop provided attendees with valuable insights into Web 3.0 technology.",
     },
     {
       year: 2022,
-      Title: "Vision Voyage",
-      Description: "This event aimed at guiding first-year students by creating a comprehensive roadmap for their academic and technical journey",
+      Title: "VISION VOYAGE",
+      Description: "This event aimed at guiding first-year students by creating a comprehensive roadmap for their academic and technical journey.",
     },
     {
       year: 2022,
-      Title: "Teacher’s Day Celebration",
-      Description: "Hosted a special event in honor of Teacher’s Day",
+      Title: "TEACHER’S DAY CELEBRATIONS",
+      Description: "Hosted a special event in honor of Teacher’s Day.",
     },
     {
       year: 2022,
-      Title: "Dil chahta hai ",
+      Title: "DIL CHAHTA HAI ",
       Description: "Organized a heartwarming charity event to make a difference in the lives of those who need it most.",
     },
     // {
@@ -153,10 +153,10 @@ const Timeline = () => {
   {/* Header Section */}
   <div className="mb-8 md:mb-16 flex flex-col md:flex-row items-center" >
     <button className="bg-[#111111] ml-15 mt-10 text-lg md:text-xl font-medium inline-block px-4 py-2 rounded-full mb-4 md:mb-0 md:mr-4">
-      Our Milestone
+      OUR MILESTONES
     </button>
     <p className="text-center mt-10 md:text-left text-base md:text-2xl max-w-2xl md:mr-8 md:ml-auto px-2">
-      Explore ACES journey, from inception to significant milestones, marking our growth and achievements.
+    The journey of ACES over the years reflects a legacy of growth, innovation, and unwavering dedication.
     </p>
   </div>
        </div>

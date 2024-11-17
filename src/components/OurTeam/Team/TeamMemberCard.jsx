@@ -18,7 +18,7 @@ const TeamMemberCard = ({ member }) => {
         {/* Overlay */}
         <div
           className="absolute inset-0 bg-black bg-opacity-40 opacity-0 
-            transition-opacity duration-300 group-hover:opacity-100"
+            transition-opacity duration-300 "
         />
       </div>
 

@@ -24,7 +24,7 @@ const WhatWeDo = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <h3 className="text-base font-medium mb-8 sm:mb-12 bg-[#1C1C1C] inline-block px-4 sm:px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
-          What we do?
+          WHAT WE DO?
         </h3>
 
         {/* Activities List */} 

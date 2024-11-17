@@ -72,11 +72,12 @@ function Home() {
           </div>
 
           <p className="mt-6 text-lg">
-            We are not a club, we are an association.
+          "For the Students By the Students"
+            
           </p>
           <p className="text-gray-400 max-w-md mx-auto">
-            Committed to the principles of Unity, Support, and Dedication with
-            years of hands-on experience in the industry.
+            We are not a club, we are an association.
+            Committed to the principles of Unity, Support, and Dedication.
           </p>
           <a
             href="#"
@@ -91,7 +92,7 @@ function Home() {
         <div className="container mx-auto max-w-6xl rounded-3xl">
           <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
             <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
-              Upcoming Events
+              UPCOMING EVENTS
             </h3>
           </div>
         </div>
@@ -104,7 +105,7 @@ function Home() {
         <div className="container mx-auto max-w-6xl rounded-3xl">
           <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
             <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
-              Our Faculty coordinator
+              OUR MENTORS
             </h3>
           </div>
         </div>

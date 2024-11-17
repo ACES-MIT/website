@@ -6,7 +6,8 @@ const TeamMemberCard = ({ member }) => {
       {/* Card Container */}
       <div
         className="relative overflow-hidden rounded-lg bg-gray-800 
-          transition-transform duration-300 ease-in-out group-hover:-translate-y-2 w-60 h-80"
+          transition-transform duration-300 ease-in-out group-hover:-translate-y-2 w-60"
+        style={{ aspectRatio: '4 / 5' }}
       >
         {/* Image Container */}
         <img

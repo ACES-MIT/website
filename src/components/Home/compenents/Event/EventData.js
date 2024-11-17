@@ -1,4 +1,5 @@
 import Try from "../../../../assets/try.jpg";
+import Dil from "../../../../assets/Dil.jpg";
 
 export const EventData = [
   {
@@ -9,7 +10,7 @@ export const EventData = [
     MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
     AInfo: "of those who need it most.o",
     Link: "/register",
-    Image: Try,
+    Image: Dil,
   },
   {
     Name: "Vision Voyage",

@@ -20,7 +20,7 @@ export const coreTeamMembers = [
   {
     name: 'Srushti Kulkarni',
     role: 'Treasurer',
-    image: '/images/Srushti Kulkarni (1).jpg'
+    image: '/images/srushti Kulkarni.jpg'
   }
   // {
   //   name: 'Muskan Rai',
@@ -57,6 +57,11 @@ export const technicalTeamMembers = [
     image: 'images/tanvi bokade.jpg'
   }
   ,
+  {
+    name: 'Priyansh',
+    role: 'Tech Team Member',
+    image: 'images/priyansh.jpg'
+  },
   {
     name: 'Parth',
     role: 'Tech Team Member',
@@ -282,6 +287,11 @@ export const CulturalTeamMembers = [
     image: '/images/srushti Kulkarni.jpg'
 },
 {
+    name: 'Shahid Patel',
+    role: 'Cultural Team Lead',
+    image: '/images/Shahid Patel.jpg'
+},
+{
   name: 'Avni Barde',
   role: 'Cultural Team Member',
   image: '/images/Avni Barde.JPG'
@@ -316,12 +326,6 @@ export const CulturalTeamMembers = [
     name: 'Shivansh',
     role: 'Cultural Team Member',
     image: '/images/Shivansh.jpg'
-},
-
-{
-    name: 'Shahid Patel',
-    role: 'Cultural Team Member',
-    image: '/images/Shahid Patel.jpg'
 },
 
 {
@@ -444,7 +448,6 @@ export const SocialMediaTeamMembers = [
   role: 'Social Media Team Member',
   image: '/images/Atharva borkar.JPG'
 },
-
 {
   name: 'Devyanshu misal',
   role: 'Social Media Team Member',

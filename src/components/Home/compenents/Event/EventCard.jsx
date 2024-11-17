@@ -25,19 +25,16 @@ const EventCard = ({ data }) => {
   );
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-6">
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <CardContent key="front">
-          {/* Image container with 1:1 ratio */}
-          <div className="w-[80%] aspect-square mt-6 rounded-3xl relative overflow-hidden">
-            <div className="w-full h-full relative">
-              {data?.Image && (
-                <div
-                  style={{ backgroundImage: `url(${data.Image})` }}
-                  className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-                />
-              )}
-            </div>
+          
+          <div className="w-[80%] aspect-square   relative overflow-hidden">
+            <img
+              src={data?.Image}
+              alt={data?.Name}
+              className="w-full h-full object-cover"
+            />
           </div>
           
           <div className="text-gray-200 text-lg sm:text-xl md:text-3xl xl:text-4xl mt-5 font-semibold font-sf-pro text-center">

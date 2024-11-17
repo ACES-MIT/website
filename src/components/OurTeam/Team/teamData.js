@@ -425,7 +425,6 @@ export const SocialMediaTeamMembers = [
     role: 'Social Media Lead',
     image: '/images/Rohit Bhat.jpg'
   },
-,
   
 {
   name: 'Atharva pandhare',
@@ -446,7 +445,6 @@ export const SocialMediaTeamMembers = [
   image: '/images/Atharva borkar.JPG'
 },
 
-,
 {
   name: 'Devyanshu misal',
   role: 'Social Media Team Member',

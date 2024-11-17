@@ -117,7 +117,7 @@ function Home() {
             ? FacultyData_Top.map((el) => (
                 <Faculty
                   Name={el.Name}
-                  Postition={el.Postition}
+                  position={el.position}
                   Image={el.Image}
                 />
               ))
@@ -129,7 +129,7 @@ function Home() {
             ? FacultyData_Bottom.map((el) => (
                 <Faculty
                   Name={el.Name}
-                  Postition={el.Postition}
+                  position={el.position}
                   Image={el.Image}
                 />
               ))

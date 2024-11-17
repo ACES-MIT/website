@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="text-center md:text-left">
           <h4 className="text-white text-base font-semibold tracking-wider uppercase">
-            By the Students, For the Students
+            "By the Students, For the Students"
           </h4>
         </div>
 

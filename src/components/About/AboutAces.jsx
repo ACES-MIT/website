@@ -28,11 +28,11 @@ function AboutAces() {
         ABOUT ACES
       </h1>
       <p className="text-base md:text-4xl lg:text-xl mb-2 md:mb-3 lg:mb-4 block animate-riseUpSlow delay-550">
-        We are not a Club, We are an Association.
+        "For the Students By the Students"
       </p>
       <p className="text-base md:text-lg lg:text-xl block animate-riseUpSlow delay-550">
-        Committed to the principles of Unity, Support, and Dedication.
-        <p>With 6 years of hands-on experience in the industry.</p>
+        We are not a Club, We are an Association.
+        <p>Committed to the principles of Unity, Support, and Dedication.</p>
       </p>
       <GradientBox {...gradientConfig2} />
     </div>

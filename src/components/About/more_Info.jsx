@@ -32,12 +32,13 @@ const gradientConfig2 = {
             
       </div>
 
+ 
       <div className="flex flex-col text-center md:text-left md:items-end md:pr-20 lg:pr-40">
         <p className="mb-4 text-xl max-w-full md:max-w-lg lg:max-w-xl">
-          Founded in A.Y. 2018-19, ACES was initiated by the CSE faculty and nurtured by enthusiastic students. Our goal is to bridge the gap between classroom learning and real-world applications, enabling students to reach their full potential.
+         ACES, the oldest and largest club at MIT ADT University's School of Computing, is a vibrant techno-cultural organization established in 2018-19. It empowers students with opportunities that go beyond academics, nurturing leadership, technical expertise, and cultural interests. Renowned for its consistency and dynamic events, ACES fosters excellence while building a strong sense of community among students and faculty alike.
         </p>
         <p className="max-w-full text-xl md:max-w-lg lg:max-w-xl">
-          The Association of Computer Science Enthusiasts (ACES) is an autonomous student body under the Computer Science and Engineering (CSE) department at MIT ADT University. Our mission is to empower future Computer Science Engineers to explore their passions and interests.
+         As an umbrella to other clubs within the School of Computing, ACES plays a pivotal role in bridging technology and culture. With its massive following and respected legacy, it provides a platform where students can thrive academically, socially, and creatively.
         </p>
       </div>
     </div>

@@ -125,7 +125,7 @@ const AnimatedTeamDisplay = () => {
                    <span className="flex h-4 w-3 mr-2">
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-blink"></span>
                     </span>
-                     Recent Event
+                     View Team
                     </button>
               </div>
                  

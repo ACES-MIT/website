@@ -56,7 +56,7 @@ const StatsSection = () => {
       <div className="flex mr-6  flex-col sm:flex-col md:flex-row md:justify-end items-center gap-8 md:gap-24 md:h-auto sm:h-auto">
         <StatItem number="6" label="Years of Experience" />
         <StatItem number="99+" label="Aspiring minds" />
-        <StatItem number="46" label="Events" />
+        <StatItem number="26" label="Events" />
       </div>
     </div>
     </div>

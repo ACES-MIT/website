@@ -37,10 +37,10 @@ const EventCard = ({ data }) => {
             />
           </div>
           
-          <div className="text-gray-200 text-lg sm:text-xl md:text-3xl xl:text-4xl mt-5 font-semibold font-sf-pro text-center">
+          <div className="text-gray-200 text-lg sm:text-xl md:text-3xl xl:text-4xl mt-2 font-semibold font-sf-pro text-center">
             {data?.Name}
           </div>
-          <div className="text-gray-200 text-sm sm:text-md md:text-xl xl:text-2xl mt-3 font-semibold font-sf-pro text-center">
+          <div className="text-gray-200 text-sm sm:text-md md:text-xl xl:text-2xl mt-2 font-semibold font-sf-pro text-center">
             {data?.About}
           </div>
           <div className="text-gray-200 text-xs sm:text-sm md:text-lg xl:text-xl mt-2 font-semibold font-sf-pro text-center mb-4">

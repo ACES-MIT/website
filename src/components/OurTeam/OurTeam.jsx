@@ -1,6 +1,6 @@
 import CoreTeamSection from "./Team/CoreTeamSection";
-import OtherTeamsSection from "./team/OtherTeamsSection";
-import { coreTeamMembers, technicalTeamMembers,designTeamMembers,CulturalTeamMembers,FinanceTeamMembers,ContentTeamMembers,PromotionsTeamMembers,SocialMediaTeamMembers} from "./team/teamData";
+import OtherTeamsSection from "./Team/OtherTeamsSection";
+import { coreTeamMembers, technicalTeamMembers,designTeamMembers,CulturalTeamMembers,FinanceTeamMembers,ContentTeamMembers,PromotionsTeamMembers,SocialMediaTeamMembers} from "./Team/teamData";
 import TeamHeader from "./TeamHeader";
 import BestTeam from "./BestTeam";
 import { useEffect } from "react";

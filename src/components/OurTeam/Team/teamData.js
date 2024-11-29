@@ -31,28 +31,28 @@ export const coreTeamMembers = [
 
 export const technicalTeamMembers = [
   {
-    name: 'Devak',
+    name: 'Devak Khandelwal',
     role: 'Tech Team Lead',
     image: 'images/Devak Khandelwal.jpg'
   },
   {
-    name: 'Celci',
+    name: 'Celcilin C S',
     role: 'Tech Team Lead',
     image: 'images/CELCILIN.jpg'
   },
   {
-    name: 'Shivam',
+    name: 'Shivam Khode',
     role: 'Tech Team Member',
     image: 'images/Shivam Khode.jpg'
   },
   {
-    name: 'Shreyanshu',
+    name: 'Shreyanshu Maske',
     role: 'Tech Team Member',
     image: '/images/Shreyanshu Maske.jpg'
   } 
   ,
   {
-    name: 'TANVI',
+    name: 'Tanvi Bokade',
     role: 'Tech Team Member',
     image: 'images/tanvi bokade.jpg'
   }
@@ -63,19 +63,17 @@ export const technicalTeamMembers = [
     image: 'images/priyansh.jpg'
   },
   {
-    name: 'Parth',
+    name: 'Parth Bhende',
     role: 'Tech Team Member',
     image: 'images/Parth bhende.JPG'
-  }
-
-  ,
+  },
   {
-    name: 'Soham',
+    name: 'Soham Hipparkar',
     role: 'Tech Team Member',
     image: 'images/SohamHipparkar.png'
   }
   ,{
-    name: 'Shubham',
+    name: 'Shubham Karna',
     role: 'Tech Team Member',
     image: 'images/ShubhamKarna.jpeg'
   }

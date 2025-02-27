@@ -12,15 +12,15 @@ export const coreTeamMembers = [
   ,
   {
     name: 'Vedika Bhoite',
-    role: 'secretary',
+    role: 'Secretary',
     image: '/images/Vedika Bhoite .jpg '
   },
  
  
   {
-    name: 'Srushti Kulkarni',
+    name: 'Ishan',
     role: 'Treasurer',
-    image: '/images/srushti Kulkarni.jpg'
+    image: '/images/Ishan_photo.jpeg'
   }
   // {
   //   name: 'Muskan Rai',

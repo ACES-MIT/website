@@ -88,23 +88,23 @@ function Home() {
           </a>
         </main>
       </div>
-      <div className="felx justify-center bg-[#0e0d0d] text-white py-16 px-6">
+      <div className="flex justify-center bg-[#0e0d0d] text-white py-5 px-6">
         <div className="container mx-auto max-w-6xl rounded-3xl">
-          <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
-            <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
+          <div className="flex justify-center border-t border-t-white border-opacity-25 rounded-3xl">
+            <h3 className="text-base font-medium mt-5 mb-3 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
               UPCOMING EVENTS
             </h3>
           </div>
         </div>
       </div>
-      <div className="bg-[#0e0d0d]flex justify-center items-center w-full min-h-screen gap-28 flex-wrap">
+      <div className="bg-[#0e0d0d] flex justify-center items-center w-full min-h-screen">
         <Event />
       </div>
 
-      <div className="bg-[#0e0d0d] text-white py-16 px-6">
+      <div className="bg-[#0e0d0d] text-white  pt-16 pb-1 px-6">
         <div className="container mx-auto max-w-6xl rounded-3xl">
           <div className="flex justify-center border-t border-t-white border-opacity-25  rounded-3xl">
-            <h3 className="text-base font-medium mt-5 ml-5 mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
+            <h3 className="text-base font-medium mt-5 ml-5 mb-2 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25 ">
               OUR MENTORS
             </h3>
           </div>
@@ -143,3 +143,73 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+
+// const CountingNumber = ({ end, duration = 2000 }) => {
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     let startTimestamp = null;
+//     const endNum = parseInt(end);
+    
+//     const animate = (timestamp) => {
+//       if (!startTimestamp) startTimestamp = timestamp;
+//       const progress = timestamp - startTimestamp;
+      
+//       const progressPercentage = Math.min(progress / duration, 1);
+//       const currentCount = Math.floor(progressPercentage * endNum);
+      
+//       setCount(currentCount);
+      
+//       if (progressPercentage < 1) {
+//         requestAnimationFrame(animate);
+//       } else {
+//         setCount(endNum);
+//       }
+//     };
+    
+//     requestAnimationFrame(animate);
+//   }, [end, duration]);
+
+//   return (
+//     <span className="text-[56px] sm:text-[56px] md:text-[80px] font-bold text-white mb-2">
+//       {count}{end.toString().endsWith('+') ? '+' : ''}
+//     </span>
+//   );
+// };
+
+// const StatItem = ({ number, label }) => (
+//   <div className="flex flex-col items-center px-4 md:px-0">
+//     <CountingNumber end={number} />
+//     <span className="text-sm md:text-lg text-gray-300 text-center">{label}</span>
+//   </div>
+// );
+
+// const StatsSection = () => {
+//   return (
+//     <div className="bg-[#0e0d0d] text-white py-16 px-4 sm:px-6">
+//       <div className="container mx-auto max-w-6xl">
+//         <div className="border-t border-t-white border-opacity-25 rounded-3xl">
+//           {/* Centered header across all screen sizes */}
+//           <div className="-mt-5 mb-10 flex justify-center">
+//             <h2 className="mt-9 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white border-opacity-25 px-10">
+//               OUR STATS 
+//             </h2>
+//           </div>
+
+//           {/* Centered stat items */}
+//           <div className="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-8 md:gap-24 pb-10">
+//             <StatItem number="6" label="Years of Experience" />
+//             <StatItem number="99+" label="Aspiring minds" />
+//             <StatItem number="26" label="Events" />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+// export default StatsSection;

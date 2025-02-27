@@ -23,7 +23,7 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'Instagram',
-      href: 'https://www.instagram.com/aces_mitsoc/?hl=en',
+      href: 'https://www.instagram.com/aces_mitadt?igsh=MWo5YnRiZGoycTkydA==',
       icon: InstagramIcon,
       hoverColor: 'hover:text-pink-500'
     },

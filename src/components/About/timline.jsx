@@ -87,6 +87,12 @@ const Timeline = () => {
       Title: "DIL CHAHTA HAI ",
       Description: "Organized a heartwarming charity event to make a difference in the lives of those who need it most.",
     },
+    {
+      year: 2025,
+      Title: "ACES COMMUNITY DAY",
+      Description: "ACES is a dynamic event blending technical innovation and cultural creativity, fostering talent and collaboration.",
+    }
+    
     // {
     //   year: 2022,
     //   Title: "Coding the Future",
@@ -160,7 +166,7 @@ const Timeline = () => {
     </p>
   </div>
        </div>
-        <section className="bg-black mb-20">
+        <section className="bg-black mb-20 mx-12 md:mx-12">
           <div className="md:mt-24 mt-12 text-[#CA80FF]">
             <div className="hidden md:block mt-12 mb-72">
               {/* Timeline for desktop */}
@@ -171,6 +177,7 @@ const Timeline = () => {
                   <span className="text-lg font-bold">2022</span>
                   <span className="text-lg font-bold">2023</span>
                   <span className="text-lg font-bold">2024</span>
+                  <span className="text-lg font-bold">2025</span>
                 </div>
 
                 <div className="flex justify-around items-center w-full pt-7">
@@ -201,10 +208,10 @@ const Timeline = () => {
                           <div
                             className="relative z-10 opacity-0 transition-opacity duration-300 hover:opacity-100 mt-12 pt-8 w-full md:w-[200%] md:left-[-40px]"
                           >
-                            <h3 className="text-lg font-bold mb-2 text-main-sc-dark">
+                            <h3 className="text-lg font-bold mb-2 text-main-sc-dark break-words whitespace-normal">
                               {item["Title"]}
                             </h3>
-                            <p className="text-sm">
+                            <p className="text-sm  text-wrap">
                               {item["Description"]}
                             </p>
                           </div>

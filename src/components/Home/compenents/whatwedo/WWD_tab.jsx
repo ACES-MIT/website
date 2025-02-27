@@ -23,7 +23,7 @@ const WhatWeDo = () => {
     <div className="bg-[#0e0d0d] text-white py-16 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h3 className="text-base font-medium mb-8 sm:mb-12 bg-[#1C1C1C] inline-block px-4 sm:px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
+        <h3 className="text-base font-medium mb-8 sm:mb-12 bg-[#1C1C1C] block px-4 sm:px-6 py-3 rounded-full border-t border-t-white border-opacity-25 text-center sm:text-left w-fit mx-auto sm:mx-0">
           WHAT WE DO?
         </h3>
 

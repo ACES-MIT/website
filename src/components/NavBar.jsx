@@ -25,7 +25,7 @@ const Navbar = () => {
             <img
               src={menu}
               alt="Menu"
-              className="h-6 sm:h-8 w-6 sm:w-8 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+              className="h-10 sm:h-10 w-10 sm:w-10 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
               onClick={toggleMenu}
             />
           </div>
@@ -87,11 +87,11 @@ const Navbar = () => {
         >
           <Link 
             to="/register" 
-            className="flex items-center justify-center md:justify-start bg-[#252525] text-sm sm:text-base lg:text-lg text-white px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-full shadow-inner  sm:w-50% md:w-auto whitespace-nowrap" 
+            className="flex items-center justify-center md:justify-start bg-[#252525] text-sm sm:text-base lg:text-lg text-white px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-full shadow-inner sm:w-50% md:w-auto whitespace-nowrap" 
             onClick={() => setIsMenuOpen(false)}
           >
-            <span className="flex h-4 w-3 mr-2">
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500 animate-blink"></span>
+            <span className="flex items-center justify-center h-4 w-3 mr-2">
+              <span className="inline-flex h-2 w-2 rounded-full bg-green-500 animate-blink"></span>
             </span>
             RECENT EVENTS
           </Link>

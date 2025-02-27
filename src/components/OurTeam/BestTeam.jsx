@@ -100,12 +100,12 @@ const AnimatedTeamDisplay = () => {
   `;
 
   const images = [
-    'url(src/components/OurTeam/BestTeam/IMG_2015.jpg)',
-    'url(src/components/OurTeam/BestTeam/IMG_2645.jpg)',
-    'url(src/components/OurTeam/BestTeam/IMG_5458.jpg)',
-    'url(src/components/OurTeam/BestTeam/club.jpg)',
-    'url(src/components/OurTeam/BestTeam/IMG_4183.JPG)',
-    'url(src/components/OurTeam/BestTeam/IMG_2726.jpg)',
+    'url(BestTeam/IMG_2015.jpg)',
+    'url(BestTeam/IMG_2645.jpg)',
+    'url(BestTeam/IMG_5458.jpg)',
+    'url(BestTeam/club.jpg)',
+    'url(BestTeam/IMG_4183.JPG)',
+    'url(BestTeam/IMG_2726.jpg)',
     'url()',
     'url()'
   ];

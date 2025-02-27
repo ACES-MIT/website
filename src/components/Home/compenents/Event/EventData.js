@@ -1,4 +1,5 @@
-import Try from "../../../../assets/try.jpg";
+
+import Try from "../../../../assets/ACD.jpg";
 import Dil from "../../../../assets/Dil.jpg";
 
 export const EventData = [
@@ -7,11 +8,11 @@ export const EventData = [
     About: "Donation Drive",
     Date: "19-10-2024",
     Details: "DIL CHAHTA HAI",
-    MInfo: "Organized a heartwarming charity event to make a difference in the lives",
+    MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
     AInfo: "of those who need it most",
     Link: "/register",
     Image: Dil,
-    isRegistrationClosed: false
+    isRegistrationClosed: true
   },
   {
     Name: "VISION VOYAGE",

@@ -85,8 +85,10 @@ const Navbar = () => {
             }
           `}
         >
+
+{/* to="/register"  */}
           <Link 
-            to="/register" 
+            to="/" 
             className="flex items-center justify-center md:justify-start bg-[#252525] text-sm sm:text-base lg:text-lg text-white px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-full shadow-inner sm:w-50% md:w-auto whitespace-nowrap" 
             onClick={() => setIsMenuOpen(false)}
           >

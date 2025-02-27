@@ -21,12 +21,13 @@ const EventCard = ({ data }) => {
       <div className="flex flex-col justify-center items-center w-[90%] h-[85%] rounded-[5%] bg-[rgb(31,31,31)] border-t-2 border-gray-400 relative">
         {children}
         {data?.isRegistrationClosed && (
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80 backdrop-blur-sm flex items-center justify-center rounded-[5%] z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80  flex items-center justify-center rounded-[5%] z-10">
             <div className="relative px-12 py-3 overflow-hidden">
               <span className="relative z-10 text-white font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl tracking-wider uppercase">
               Registration Closed
               </span>
-              <div className="absolute inset-0 bg-red-500/40 border-t border-b border-red-400/60 backdrop-blur-sm"></div>
+              ...
+<div className="absolute inset-0 bg-[rgba(128,0,128,0.4)] border-t border-b border-red-400/60 backdrop-blur-sm"></div>
             </div>
           </div>
         )}

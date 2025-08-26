@@ -7,7 +7,7 @@ import PujeriSir from "../../assets/pujeri_sir.jpg";
 import MangeshSir from "../../assets/mangesh_sir.jpeg";
 import VipulSir from "../../assets/vipul_sir.jpeg";
 import  RajeshSir from "../../assets/Rajesh s.jpeg";
-
+import  SwapnilPatil from "../../assets/swapnilPatil.jpeg";
 
 export const FacultyData_Top = [
   { Name: "Prof. Dr. Mangesh T. Karad", position: "Executive President", Image: MangeshSir },
@@ -21,7 +21,7 @@ export const FacultyData_Bottom = [
   { Name: "Prof. Dr. Vipul Dalal", position: "Director, School of Computing", Image: VipulSir },
   { Name: "Prof. Dr. Ganesh Pathak", position: "HOD, Computer Science and Eng.", Image: GaneshSir },
   { Name: "Prof. Dr. Shradha Phansalkar", position: "HOD, School of Computing", Image: ShradhaMaam },
-  { Name: "Prof. Tanuja Zende", position: "Faculty Coordinator",  },
+  { Name: "Prof. swapnil patil", position: "Faculty Coordinator",Image: SwapnilPatil },
 ]
 
 export const EventData = [{}];

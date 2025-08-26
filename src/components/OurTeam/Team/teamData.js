@@ -1,32 +1,34 @@
 export const coreTeamMembers = [
   {
-    name: 'Sarthak Salunke',
+    name: 'Aayush Dalvi',
     role: 'President',
-    image: 'images/sarthak.jpg'
+    image: 'images/AayushDalvi.jpeg'
   },
   {
-    name: 'Muskan Rai',
+    name: 'Shivam Jha',
     role: 'Vice President',
-    image: '/images/Muskan Rai.jpeg'
+    image: 'images/Shivam Jha.jpg'
   }
   ,
   {
     name: 'Vedika Bhoite',
-    role: 'Secretary',
+    role: 'Vice President',
     image: '/images/Vedika Bhoite .jpg '
+  },{
+    name: 'Vedant Ghule',
+    role: 'Joint Secretary',
+    image: '/images/Vedant Ghule.jpg'
+  },{
+    name: 'Shivansh Sinha',
+    role: 'Secretary',
+    image: '/images/Shivansh.jpeg'
   },
- 
- 
   {
     name: 'Ishan',
     role: 'Treasurer',
     image: '/images/Ishan_photo.jpeg'
-  }
-  // {
-  //   name: 'Muskan Rai',
-  //   role: 'Vice President',
-  //   image: '/images/try.jpg'
-  // }
+  },
+ 
 ];
 
 export const technicalTeamMembers = [

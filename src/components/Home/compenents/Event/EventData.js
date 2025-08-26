@@ -1,8 +1,19 @@
 
-import Try from "../../../../assets/ACD.jpg";
+import Try from "../../../../assets/vv.jpg";
 import Dil from "../../../../assets/Dil.jpg";
 
 export const EventData = [
+   {
+    Name: "VISION VOYAGE",
+    About: "Roadmap for students",
+    Date: "3-9-2025",
+    Details: "VISION VOYAGE",
+    MInfo: "This event aimed at guiding first-year  ",
+    AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
+    Link: "https://docs.google.com/forms/d/e/1FAIpQLSe0sAp8OyQjVopCJ-HqJqMA2Llkh-TIWRBjtFhcuI_exoSMHw/viewform?usp=header",
+    Image: Try,
+    isRegistrationClosed: false
+  },
   {
     Name: "DIL CHAHTA HAI",
     About: "Donation Drive",
@@ -14,15 +25,5 @@ export const EventData = [
     Image: Dil,
     isRegistrationClosed: true
   },
-  {
-    Name: "VISION VOYAGE",
-    About: "Roadmap for students",
-    Date: "22-9-2024",
-    Details: "VISION VOYAGE",
-    MInfo: "This event aimed at guiding first-year  ",
-    AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
-    Link: "*",
-    Image: Try,
-    isRegistrationClosed: true
-  },
+ 
 ];

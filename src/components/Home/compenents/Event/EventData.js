@@ -4,10 +4,10 @@ import Dil from "../../../../assets/Dil.jpg";
 
 export const EventData = [
    {
-    Name: "VISION VOYAGE",
+    Name: "VISION VOYAGE 2.0",
     About: "Roadmap for students",
     Date: "3-9-2025",
-    Details: "VISION VOYAGE",
+    Details: "VISION VOYAGE 2.0",
     MInfo: "This event aimed at guiding first-year  ",
     AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
     Link: "https://docs.google.com/forms/d/e/1FAIpQLSe0sAp8OyQjVopCJ-HqJqMA2Llkh-TIWRBjtFhcuI_exoSMHw/viewform?usp=header",

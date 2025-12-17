@@ -37,16 +37,10 @@ function EventRegistrationForm() {
   return (
     <div className="text-left min-h-screen flex items-center justify-center bg-black text-white p-4 ">
       <div className="w-full max-w-2xl md:p-8 p-4 space-y-6 mt-24">
-        <button className="bg-[#111111] rounded-full p-3 no-underline text-purple-500 hover:text-purple-300 mb-4 text-base"
-        onClick={() => navigate("/")}>
-          &lt; Back to home
-        </button>
-        <p className="text-sm font-semibold mb-4 flex items-center">
-          <span className="animate-pulse text-purple-500 mr-1">•</span>
-          <span className="text-purple-500">Closes on 25 October</span>
-        </p>
+        
+    
         <h1 className="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left">
-          Registration for Dil Chahta Hai
+          Register for ACD 2K26
         </h1>
 
         <form

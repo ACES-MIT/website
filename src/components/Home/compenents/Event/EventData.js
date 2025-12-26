@@ -1,6 +1,9 @@
-
-import Try from "../../../../assets/vv.jpg";
-import Dil from "../../../../assets/Dil.jpg";
+// Event Images from Cloudinary CDN
+const EventImages = {
+  VisionVoyage: "https://res.cloudinary.com/dtoxlqpkf/image/upload/v1766772881/vv_c4mjnz.jpg",
+  DilChahtaHai: "https://res.cloudinary.com/dtoxlqpkf/image/upload/v1766772879/Dil_yowtbz.jpg",
+  ACD: "https://res.cloudinary.com/dtoxlqpkf/image/upload/v1766772882/ACD_jidv8v.jpg"
+};
 
 export const EventData = [
    {
@@ -11,7 +14,7 @@ export const EventData = [
     MInfo: "This event aimed at guiding first-year  ",
     AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
     Link: "https://docs.google.com/forms/d/e/1FAIpQLSe0sAp8OyQjVopCJ-HqJqMA2Llkh-TIWRBjtFhcuI_exoSMHw/viewform?usp=header",
-    Image: Try,
+    Image: EventImages.VisionVoyage,
     isRegistrationClosed: false
   },
   {
@@ -22,7 +25,7 @@ export const EventData = [
     MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
     AInfo: "of those who need it most",
     Link: "/register",
-    Image: Dil,
+    Image: EventImages.DilChahtaHai,
     isRegistrationClosed: true
   },
  

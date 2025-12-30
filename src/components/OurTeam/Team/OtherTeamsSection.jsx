@@ -24,14 +24,14 @@ const OtherTeamsSection = ({ title, members }) => {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-4 md:space-y-6 w-full mb-5 ">
+    <div className="flex flex-col items-center space-y-4 md:space-y-6 w-full mb-5 " style={{marginTop: '100px'}}>
       <div className="w-full flex justify-start">
         <span className="bg-gray-800 text-white px-6 py-2 rounded-full text-lg font-medium transition-all duration-300 hover:bg-gray-700">
           {title}
         </span>
       </div>
       <div className="relative flex justify-center items-center w-full max-w-xs md:max-w-sm lg:max-w-md">
-        <div className={`transition-transform transition-opacity duration-500 ${swipeDirection}`}>
+        <div className={`transition-transform duration-500 ${swipeDirection}`}>
           <TeamMemberCard member={members[currentIndex]} />
         </div>
         <button

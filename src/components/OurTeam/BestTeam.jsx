@@ -112,8 +112,6 @@ const AnimatedTeamDisplay = () => {
 
   return (
     <div className="flex flex-col bg-black">
-      <div className="h-screen bg-black" />
-      
       <div className="animation-container bg-black">
         <div className="relative h-screen w-full">
           <div className="flex h-screen w-full items-center justify-center flex-wrap gap-5">
@@ -143,7 +141,7 @@ const AnimatedTeamDisplay = () => {
         </div>
       </div>
       
-      <div className="h-screen bg-black" />
+      <div style={{ height: '100px' }} />
     </div>
   );
 };

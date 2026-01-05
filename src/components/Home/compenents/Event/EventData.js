@@ -1,29 +1,17 @@
 
-import Try from "../../../../assets/vv.jpg";
-import Dil from "../../../../assets/Dil.jpg";
+import Try from "../../../../assets/acd2026.png";
 
 export const EventData = [
    {
-    Name: "VISION VOYAGE 2.0",
-    About: "Roadmap for students",
-    Date: "3-9-2025",
-    Details: "VISION VOYAGE 2.0",
-    MInfo: "This event aimed at guiding first-year  ",
-    AInfo: "students by creating a comprehensive roadmap for their academic and technical journey",
-    Link: "https://docs.google.com/forms/d/e/1FAIpQLSe0sAp8OyQjVopCJ-HqJqMA2Llkh-TIWRBjtFhcuI_exoSMHw/viewform?usp=header",
+    id: "acd-2k26",
+    Name: "ACES Community day - ACD 2k26",
+    About: "is a flagship two-day technology event and community celebration.",
+    Date: "29-1-2026 & 30-1-2026",
+    Details: "ACES Community day 2k26",
+    MInfo: "ACD is designed to bring together students, developers, innovators, creators, and tech enthusiasts under one roof to explore ideas, exchange knowledge, and celebrate the evolving world of technology and digital creativity.",
+    AInfo: "TICKETS ARE OUT NOW! Click to Register╰(*°▽°*)╯",
+    Link: "https://acd.acesmitadt.com/",
     Image: Try,
     isRegistrationClosed: false
   },
-  {
-    Name: "DIL CHAHTA HAI",
-    About: "Donation Drive",
-    Date: "19-10-2024",
-    Details: "DIL CHAHTA HAI",
-    MInfo: "Organized a heartwarming charity  event to make a difference in the lives",
-    AInfo: "of those who need it most",
-    Link: "/register",
-    Image: Dil,
-    isRegistrationClosed: true
-  },
- 
 ];

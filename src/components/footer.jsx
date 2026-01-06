@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ACES from "../assets/ACESLogo.jpeg"  /*   black_bg: "#111111", add this in congif css as colour*/ 
 import  '../index.css';
 
@@ -44,41 +45,75 @@ const Footer = () => {
 
   return (
     <footer className="bg-black px-6 py-8 w-full">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
-        {/* Logo Section */}
-        <div className="flex items-center">
-          <img
-            src={ACES}
-            alt="ACES Logo"
-            className="h-7 object-contain"
-          />
+      <div className="container mx-auto space-y-6">
+        {/* Main Footer Content */}
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
+          {/* Logo Section */}
+          <div className="flex items-center">
+            <img
+              src={ACES}
+              alt="ACES Logo"
+              className="h-7 object-contain"
+            />
+          </div>
+
+          <div className="text-center md:text-left">
+            <h4 className="text-white text-base font-semibold tracking-wider uppercase">
+              "By the Students, For the Students"
+            </h4>
+          </div>
+
+          <div className="flex items-center gap-6">
+            {socialLinks.map((link) => {
+              const IconComponent = link.icon;
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-white ${link.hoverColor} transition-colors duration-300 transform hover:scale-110`}
+                  aria-label={`Visit our ${link.name}`}
+                >
+                  <IconComponent />   {/* added icons */}
+                </a>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="text-center md:text-left">
-          <h4 className="text-white text-base font-semibold tracking-wider uppercase">
-            "By the Students, For the Students"
-          </h4>
-        </div>
+        {/* Divider */}
+        <div className="border-t border-gray-700"></div>
 
-        <div className="flex items-center gap-6">
-          {socialLinks.map((link) => {
-            const IconComponent = link.icon;
-            return (
-              <a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-white ${link.hoverColor} transition-colors duration-300 transform hover:scale-110`}
-                aria-label={`Visit our ${link.name}`}
-              >
-                <IconComponent />   {/* added icons */}
-              </a>
-            );
-          })}
+        {/* Legal Links Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-6">
+            <Link 
+              to="/terms-and-conditions" 
+              className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+            >
+              Terms & Conditions
+            </Link>
+            <Link 
+              to="/payment-terms" 
+              className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+            >
+              Payment Terms
+            </Link>
+            <Link 
+              to="/razorpay-requirements" 
+              className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
+            >
+              Payment Info
+            </Link>
+          </div>
+          
+          <div className="text-gray-400 text-xs text-center md:text-right">
+            <p>&copy; 2026 ACES - All rights reserved.</p>
+            <p>Secured payments by Razorpay</p>
+          </div>
         </div>
       </div>
-
     </footer>
   );
 };

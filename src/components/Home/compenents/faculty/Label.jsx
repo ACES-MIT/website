@@ -1,4 +1,3 @@
-import React from "react";
 
 const Faculty = ({ Name, position, Image }) => {
   return (

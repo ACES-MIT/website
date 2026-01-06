@@ -14,6 +14,7 @@ import Footer from "./components/footer";
 import EventRegistrationForm from "./components/form";
 import Community from "./components/JoinCommunity";
 import { PageNotFound } from "./components/404";
+import Login from "./components/Login/Login";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
 import PaymentTerms from "./components/PaymentTerms/PaymentTerms";
 import RazorpayRequirements from "./components/RazorpayRequirements/RazorpayRequirements";
@@ -26,18 +27,19 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/our-Team" element={<OurTeam />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/register" element={<EventRegistrationForm />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/payment-terms" element={<PaymentTerms />} />
           <Route path="/razorpay-requirements" element={<RazorpayRequirements />} />
           <Route path="/error" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="/error" />} />
         </Routes>
-        {window.location.pathname !== "/error" && (
+        {window.location.pathname !== "/error" && window.location.pathname !== "/login" && (
           <>
             <Community />
             <Footer />

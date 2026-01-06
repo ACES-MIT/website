@@ -2,31 +2,31 @@ export const coreTeamMembers = [
   {
     name: 'Aayush Dalvi',
     role: 'President',
-    image: 'images/AayushDalvi.jpeg'
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105866/AayushDalvi_cw9ytn.jpg'
   },
   {
     name: 'Shivam Jha',
     role: 'Vice President',
-    image: 'images/Shivam Jha.jpg'
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105867/Shivam_Jha_c0pf9h.jpg'
   }
   ,
   {
     name: 'Vedika Bhoite',
     role: 'Vice President',
-    image: '/images/Vedika Bhoite .jpg '
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105876/Vedika_Bhoite_qiky0z.jpg'
   },{
     name: 'Vedant Ghule',
     role: 'Joint Secretary',
-    image: '/images/Vedant Ghule.jpg'
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105866/Vedant_Ghule_ynyjod.jpg'
   },{
     name: 'Shivansh Sinha',
     role: 'Secretary',
-    image: '/images/Shivansh.jpeg'
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767106083/Shivansh_arzltg.jpg'
   },
   {
     name: 'Ishan',
     role: 'Treasurer',
-    image: '/images/Ishan_photo.jpeg'
+    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767106083/Ishan_photo_hszdgk.jpg'
   },
  
 ];

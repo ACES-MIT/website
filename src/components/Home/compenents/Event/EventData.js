@@ -1,5 +1,5 @@
 
-import Try from "../../../../assets/acd2026.png";
+import Try from "../../../../assets/ACD.jpg";
 
 export const EventData = [
    {

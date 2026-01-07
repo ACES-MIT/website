@@ -14,24 +14,22 @@ const EventCard = ({ data }) => {
     <div
       onClick={handleClick}
       className="flex justify-center items-center 
-          w-[280px] h-[350px] md:w-[400px] md:h-[500px] xl:w-[520px] xl:h-[650px]
-          bg-[rgb(35,35,35)] rounded-[11%] 
-          transition-all duration-500 ease-in-out cursor-pointer"
+          w-[250px] h-[320px] md:w-[340px] md:h-[430px] xl:w-[420px] xl:h-[530px]
+          transition-all duration-500 ease-in-out cursor-pointer shadow-lg overflow-hidden relative"
     >
-      <div className="flex flex-col justify-center items-center w-[90%] h-[85%] rounded-[5%] bg-[rgb(31,31,31)] border-t-2 border-gray-400 relative">
-        {children}
-        {data?.isRegistrationClosed && (
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80  flex items-center justify-center rounded-[5%] z-10">
-            <div className="relative px-12 py-3 overflow-hidden">
-              <span className="relative z-10 text-white font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl tracking-wider uppercase">
-              Registration Closed
-              </span>
-              ...
+      {children}
+      
+      {data?.isRegistrationClosed && (
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80 flex items-center justify-center z-10">
+          <div className="relative px-12 py-3 overflow-hidden">
+            <span className="relative z-10 text-white font-bold text-lg sm:text-xl md:text-2xl xl:text-3xl tracking-wider uppercase">
+            Registration Closed
+            </span>
+            ...
 <div className="absolute inset-0 bg-[rgba(128,0,128,0.4)] border-t border-b border-red-400/60 backdrop-blur-sm"></div>
-            </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 
@@ -40,53 +38,46 @@ const EventCard = ({ data }) => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <CardContent key="front">
           
-          <div className="w-[80%] aspect-square relative overflow-hidden">
+          <div className="w-full h-full flex items-center justify-center relative overflow-hidden p-[1px]">
             <img
               src={data?.Image}
               alt={data?.Name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
           
-          <div className="text-gray-200 text-lg sm:text-xl md:text-3xl xl:text-4xl mt-2 font-semibold font-sf-pro text-center">
-            {data?.Name}
-          </div>
-          <div className="text-gray-200 text-sm sm:text-md md:text-xl xl:text-2xl mt-2 font-semibold font-sf-pro text-center">
-            {data?.About}
-          </div>
-          <div className="text-gray-200 text-xs sm:text-sm md:text-lg xl:text-xl mt-2 font-semibold font-sf-pro text-center mb-4">
-            {data?.Date}
-          </div>
         </CardContent>
 
         <CardContent key="back">
-          <div className="text-gray-200 text-lg sm:text-xl md:text-3xl xl:text-4xl mt-5 font-semibold font-sf-pro text-center">
-            {data?.Details}
-          </div>
-          <div className="text-gray-200 text-sm sm:text-md md:text-xl xl:text-2xl mt-3 font-semibold font-sf-pro text-center">
-            {data?.MInfo}
-          </div>
-          <div className="text-gray-200 text-xs sm:text-sm md:text-lg xl:text-xl mt-2 font-semibold font-sf-pro text-center mb-4">
-            {data?.AInfo}
-          </div>
-          <Link 
-            to={data?.isRegistrationClosed ? "#" : (data?.Link || "")} 
-            onClick={(e) => {
-              e.stopPropagation();
-              if (data?.isRegistrationClosed) e.preventDefault();
-            }}
-          >
-            <button 
-              className={`font-sf-pro font-semibold text-lg py-2 px-4 rounded-full mt-4 ${
-                data?.isRegistrationClosed 
-                  ? "bg-gray-600 text-gray-300 cursor-not-allowed" 
-                  : "bg-[#252525] border border-[#252525] text-white hover:bg-gray-700 transition-colors"
-              }`}
-              disabled={data?.isRegistrationClosed}
+          <div className="w-full h-full flex flex-col justify-center items-center p-4 md:p-6 xl:p-8 overflow-y-auto bg-gradient-to-br from-gray-900 to-black">
+            <div className="text-white text-sm sm:text-base md:text-lg xl:text-xl font-bold font-sf-pro text-center mb-3 leading-snug">
+              {data?.Details}
+            </div>
+            <div className="text-gray-300 text-xs sm:text-xs md:text-sm xl:text-base font-medium font-sf-pro text-center mb-2 leading-relaxed">
+              {data?.MInfo}
+            </div>
+            <div className="text-gray-400 text-xs sm:text-xs md:text-xs xl:text-sm font-light font-sf-pro text-center mb-4 leading-normal">
+              {data?.AInfo}
+            </div>
+            <Link 
+              to={data?.isRegistrationClosed ? "#" : (data?.Link || "")} 
+              onClick={(e) => {
+                e.stopPropagation();
+                if (data?.isRegistrationClosed) e.preventDefault();
+              }}
             >
-              {data?.isRegistrationClosed ? "Registration Closed" : "Register"}
-            </button>
-          </Link>
+              <button 
+                className={`font-sf-pro font-semibold text-xs sm:text-sm md:text-base px-6 py-2.5 rounded-full mt-3 transition-all duration-300 ${
+                  data?.isRegistrationClosed 
+                    ? "bg-gray-700 text-gray-400 cursor-not-allowed" 
+                    : "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 shadow-lg hover:shadow-purple-500/50"
+                }`}
+                disabled={data?.isRegistrationClosed}
+              >
+                {data?.isRegistrationClosed ? "Registration Closed" : "Register"}
+              </button>
+            </Link>
+          </div>
         </CardContent>
       </ReactCardFlip>
     </div>

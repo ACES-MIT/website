@@ -61,7 +61,7 @@ function Home() {
             <img
               src={logo}
               alt="Center Logo"
-              className="h-44 w-auto mx-auto mb-12"
+              className="h-40 md:h-44 w-auto mx-auto mb-12"
             />
           </div>
           <div
@@ -89,19 +89,33 @@ function Home() {
         </main>
       </div>
       
+      {/* Divider Border */}
+      <div className="bg-[#0e0d0d] px-6 py-6">
+        <div className="container mx-auto max-w-7xl border-2 border-gray-600 rounded-2xl h-px"></div>
+      </div>
+      
       {/* Upcoming Events Section */}
       <div className="bg-[#0e0d0d] text-white py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col items-center mb-16">
-            <div className="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"></div>
-            <h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-              UPCOMING EVENTS
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mt-4 rounded-full"></div>
-          </div>
-          <div className="flex justify-center items-center w-full">
-            <div className="w-full max-w-5xl mx-auto scale-90">
-              <Event />
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Events Title & Description */}
+            <div className="flex flex-col justify-center space-y-6">
+              <div className="flex flex-col items-start">
+                <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-6"></div>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-wide bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-6">
+                  UPCOMING EVENTS
+                </h2>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  Discover our latest events and join our vibrant community. From technical workshops to cultural celebrations, there's something for everyone.
+                </p>
+              </div>
+            </div>
+            
+            {/* Right Side - Event Cards */}
+            <div className="flex justify-center items-center">
+              <div className="w-full">
+                <Event />
+              </div>
             </div>
           </div>
         </div>
@@ -117,29 +131,33 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-[#0e0d0d] flex flex-col h-full w-full m-0 p-0">
-        <div className="flex flex-wrap justify-center md:gap-14 gap-4 mt-[3%]">
-          {FacultyData_Top
-            ? FacultyData_Top.map((el) => (
-                <Faculty
-                  Name={el.Name}
-                  position={el.position}
-                  Image={el.Image}
-                />
-              ))
-            : ""}
-        </div>
+      <div className="bg-[#0e0d0d] py-12 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+            {FacultyData_Top
+              ? FacultyData_Top.map((el, index) => (
+                  <Faculty
+                    key={index}
+                    Name={el.Name}
+                    position={el.position}
+                    Image={el.Image}
+                  />
+                ))
+              : ""}
+          </div>
 
-        <div className="flex flex-wrap justify-center md:gap-14 gap-4 mt-[3%]">
-          {FacultyData_Bottom
-            ? FacultyData_Bottom.map((el) => (
-                <Faculty
-                  Name={el.Name}
-                  position={el.position}
-                  Image={el.Image}
-                />
-              ))
-            : ""}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+            {FacultyData_Bottom
+              ? FacultyData_Bottom.map((el, index) => (
+                  <Faculty
+                    key={index}
+                    Name={el.Name}
+                    position={el.position}
+                    Image={el.Image}
+                  />
+                ))
+              : ""}
+          </div>
         </div>
       </div>
       <StatsSection />

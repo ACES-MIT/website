@@ -56,12 +56,12 @@ function Home() {
       />
 
       <div className="min-h-screen bg-[#0e0d0d] text-white flex flex-col items-center">
-        <main className="text-center space-y-6 mt-36">
+        <main className="text-center space-y-6 pt-32 mt-8">
           <div ref={logoRef}>
             <img
               src={logo}
               alt="Center Logo"
-              className="h-44 w-auto mx-auto mb-12 mt-16"
+              className="h-44 w-auto mx-auto mb-12"
             />
           </div>
           <div
@@ -88,17 +88,23 @@ function Home() {
           </a>
         </main>
       </div>
-      <div className="flex justify-center bg-[#0e0d0d] text-white py-5 px-6">
-        <div className="container mx-auto max-w-6xl rounded-3xl">
-          <div className="flex justify-center border-t border-t-white border-opacity-25 rounded-3xl">
-            <h3 className="text-base font-medium mt-5 mb-3 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
+      
+      {/* Upcoming Events Section */}
+      <div className="bg-[#0e0d0d] text-white py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col items-center mb-16">
+            <div className="w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               UPCOMING EVENTS
-            </h3>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mt-4 rounded-full"></div>
+          </div>
+          <div className="flex justify-center items-center w-full">
+            <div className="w-full max-w-5xl mx-auto scale-90">
+              <Event />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-[#0e0d0d] flex justify-center items-center w-full min-h-screen">
-        <Event />
       </div>
 
       <div className="bg-[#0e0d0d] text-white  pt-16 pb-1 px-6">

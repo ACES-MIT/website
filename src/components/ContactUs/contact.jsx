@@ -73,7 +73,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-black text-white p-5 md:p-10 lg:p-20 mt-36">
+    <div className="flex flex-col items-center justify-center bg-black text-white p-5 md:p-10 lg:p-20 pt-32">
       <div className="text-center max-w-2xl w-full mb-8 md:mb-16">
         <p className="text-3xl md:text-5xl lg:text-7xl mb-3 font-bold">
           CONNECT WITH US

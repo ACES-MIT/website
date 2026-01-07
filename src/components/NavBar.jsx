@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="relative w-full">
       <FloatingNav 
         navItems={navItems} 
-        logo={<img src={logo} alt="ACES Logo" className="h-8 w-auto cursor-pointer" />}
+        logo={<img src={logo} alt="ACES Logo" className="h-8  w-auto cursor-pointer" />}
       />
     </div>
   );

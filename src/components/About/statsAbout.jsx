@@ -1,66 +1,86 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 const CountingNumber = ({ end, duration = 2000 }) => {
   const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
+    if (!isInView) return;
+
     let startTimestamp = null;
     const endNum = parseInt(end);
-    
+
     const animate = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = timestamp - startTimestamp;
-      
+
       const progressPercentage = Math.min(progress / duration, 1);
       const currentCount = Math.floor(progressPercentage * endNum);
-      
+
       setCount(currentCount);
-      
+
       if (progressPercentage < 1) {
         requestAnimationFrame(animate);
       } else {
         setCount(endNum);
       }
     };
-    
+
     requestAnimationFrame(animate);
-  }, [end, duration]);
+  }, [end, duration, isInView]);
 
   return (
-    <span className="text-[56px] sm:text-[56px] md:text-[80px] font-bold text-white mb-2">
+    <span ref={ref} className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-white/50 inline-block mb-2">
       {count}{end.toString().endsWith('+') ? '+' : ''}
     </span>
   );
 };
 
-const StatItem = ({ number, label }) => (
-  <div className="flex flex-col items-center px-4 md:px-0">
+const StatItem = ({ number, label, delay }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8, delay: delay }}
+    className="flex flex-col items-center md:items-start"
+  >
     <CountingNumber end={number} />
-    <span className="text-sm md:text-lg text-gray-300 text-center">{label}</span>
-  </div>
+    <span className="text-sm md:text-base font-medium tracking-widest uppercase text-gray-500">{label}</span>
+  </motion.div>
 );
 
 const StatsSection = () => {
   return (
-    <div className="bg-black text-white py-12 px-4 sm:px-6 mt-8">
-      <div className="container mx-auto max-w-6xl">
-    <div className="border-t border-t-white/10 rounded-3xl">
-      {/* Height for different screen sizes */}
-      <div className="-mt-5 md:mb-8 flex justify-center sm:justify-center md:justify-start lg:justify-start xl:justify-start mb-10">
-  <h2 className="mt-9 ml-1 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white/10
-                 sm:w-[150px] md:w-[120px] lg:w-auto xl:w-auto md:px-6 sm:px-10 px-10">
-    OUR STATS   
-  </h2>
-</div>
+    <section className="bg-black text-white w-full py-20 border-t border-white/5">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-12">
 
-      <div className="flex mr-6  flex-col sm:flex-col md:flex-row md:justify-end items-center gap-8 md:gap-24 md:h-auto sm:h-auto">
-        <StatItem number="6" label="Years of Experience" />
-        <StatItem number="99+" label="Aspiring minds" />
-        <StatItem number="26" label="Events" />
+          {/* Section Label */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="md:w-1/4"
+          >
+            <span className="inline-block px-4 py-1.5 rounded-full border border-white/20 text-sm font-medium tracking-wider text-gray-300 uppercase bg-white/5 backdrop-blur-sm">
+              Our Impact
+            </span>
+          </motion.div>
+
+          {/* Stats Grid */}
+          <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-3 gap-12 md:gap-8">
+            <StatItem number="6" label="Years of Experience" delay={0.2} />
+            <StatItem number="99+" label="Aspiring Minds" delay={0.4} />
+            <StatItem number="26" label="Events Hosted" delay={0.6} />
+          </div>
+
+        </div>
       </div>
-    </div>
-    </div>
-    </div>
+    </section>
   );
 };
+
 export default StatsSection;

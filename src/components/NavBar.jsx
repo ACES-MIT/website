@@ -1,6 +1,6 @@
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
-import { IconUser, IconUsers, IconLogin, IconCalendarEvent } from "@tabler/icons-react";
+import { IconUser, IconUsers, IconLogin, IconCalendarEvent,IconHistory } from "@tabler/icons-react";
 import logo from './logo.png';
 
 const Navbar = () => {
@@ -9,6 +9,11 @@ const Navbar = () => {
       name: "About",
       link: "/about",
       icon: <IconUser className="h-5 w-5 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Past Events",
+      link: "/past-events",
+      icon: <IconHistory className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Our Teams",
@@ -27,10 +32,11 @@ const Navbar = () => {
     },
     {
       name: "RSVP",
-      link: "/register",
+      link: "https://acd.acesmitadt.com/",
       icon: <IconCalendarEvent className="h-5 w-5 text-neutral-500 dark:text-white" />,
       isButton: true,
     },
+    
   ];
 
   return (

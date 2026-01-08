@@ -3,10 +3,10 @@ import  '../index.css';
 
 const Community = () => {
   return (
-    <div className="relative min-h-screen bg-gray-900 overflow-hidden">
+    <div className="relative h-[400px] md:h-[450px] bg-gray-900 overflow-hidden">
       {/* Background */}
       <div
-        className="flex items-center justify-center min-h-screen bg-black w-full h-full rounded-lg overflow-hidden"
+        className="flex items-center justify-center h-full bg-black w-full rounded-lg overflow-hidden"
         style={{
           backgroundImage: 'url(https://framerusercontent.com/images/ETRqNWWMBEeXF5D05OggGRFDeec.jpg)',
           backgroundSize: 'cover',
@@ -14,7 +14,7 @@ const Community = () => {
         }}
       >
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
           
           {/* Join Button */}
           <div className="flex justify-center sm:relative sm:rounded-full sm:p-[2px] sm:bg-gradient-to-r sm:from-transparent sm:via-white to-transparent animate-border

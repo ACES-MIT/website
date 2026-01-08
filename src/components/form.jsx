@@ -35,8 +35,8 @@ function EventRegistrationForm() {
   };
 
   return (
-    <div className="text-left min-h-screen flex items-center justify-center bg-black text-white p-4 ">
-      <div className="w-full max-w-2xl md:p-8 p-4 space-y-6 mt-24">
+    <div className="text-left min-h-screen flex items-center justify-center bg-black text-white p-4 pt-32">
+      <div className="w-full max-w-2xl md:p-8 p-4 space-y-6">
         
     
         <h1 className="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left">

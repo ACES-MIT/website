@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ContactPost, BlogPost } from "../../service/API";
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 
 const ContactPage = () => {
   const routePath = useLocation();
@@ -11,209 +11,148 @@ const ContactPage = () => {
     onTop();
   }, [routePath]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [CName, setCName] = useState("");
-  const [CEmail, setCEmail] = useState("");
-  const [CMessage, setCMessage] = useState("");
-
-  const [BName, setBName] = useState("");
-  const [BEmail, setBEmail] = useState("");
-  const [BMessage, setBMessage] = useState("");
-
-  const testimonials = [
+  const contactInfo = [
     {
-      name: "Varun Poojari",
-      subtitle: "MIT Pass out Batch 2024",
-      message: `"ACES has been an invaluable resource to our university, offering students an array of immersive activities that foster growth and development. Their unwavering commitment to student success is truly impressive and aligns perfectly with our academic objectives."`,
-      image: "pathak.jpg",
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email Us",
+      subtitle: "Reach out to us",
+      content: "official@acesmitadt.com",
+      link: "mailto:official@acesmitadt.com",
     },
     {
-      name: "Arya Shetty",
-      subtitle: "CSE, Batch 2025",
-      message: `"The support and opportunities provided by ACES have been pivotal in helping me explore my interests and develop new skills. The community is welcoming, inspiring, and filled with enthusiastic members."`,
-      image: "pathak.jpg",
+      icon: <Phone className="w-6 h-6" />,
+      title: "Call Us",
+      subtitle: "Mon-Fri from 9am to 5pm",
+      content: ["+91 98765 43210", "+91 87654 32109"],
+      link: ["tel:+919876543210", "tel:+918765432109"],
     },
     {
-      name: "Rohit Rao",
-      subtitle: "ECE, Batch 2023",
-      message: `"Being a part of ACES has enriched my college experience immensely. From workshops to hands-on projects, they provide everything needed to advance in our careers."`,
-      image: "pathak.jpg",
+      icon: <MapPin className="w-6 h-6" />,
+      title: "Visit Us",
+      subtitle: "Come say hello",
+      content: "MIT ADT University, Pune",
+      link: "https://maps.app.goo.gl/c2sREVojqRdyiQon8",
     },
   ];
 
-  const showTestimonial = (index) => {
-    setCurrentIndex(index);
-  };
-
-  const changeTestimonial = (direction) => {
-    let newIndex = currentIndex + direction;
-    if (newIndex < 0) newIndex = testimonials.length - 1;
-    if (newIndex >= testimonials.length) newIndex = 0;
-    showTestimonial(newIndex);
-  };
-
-  const Submit = (Name, Email, Message) => {
-    if (Name && Email && Message) {
-      let data = { name: Name, email: Email, message: Message };
-      ContactPost(data);
-      setCName("");
-      setCEmail("");
-      setCMessage("");
-    }
-  };
-
-  const Blog = (Name, Email, Message) => {
-    if (Name && Email && Message) {
-      let data = { author: Name, image: Email, content: Message };
-      BlogPost(data);
-      setBName("");
-      setBEmail("");
-      setBMessage("");
-    }
-  };
+  const socialLinks = [
+    {
+      icon: <Linkedin className="w-6 h-6" />,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/acesmitadt",
+      color: "hover:bg-blue-600",
+    },
+    {
+      icon: <Instagram className="w-6 h-6" />,
+      name: "Instagram",
+      link: "https://www.instagram.com/aces_mitadt",
+      color: "hover:bg-pink-600",
+    },
+    {
+      icon: <Facebook className="w-6 h-6" />,
+      name: "Facebook",
+      link: "https://www.facebook.com/acesmitadt",
+      color: "hover:bg-blue-500",
+    },
+  ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-black text-white p-5 md:p-10 lg:p-20 mt-36">
-      <div className="text-center max-w-2xl w-full mb-8 md:mb-16">
-        <p className="text-3xl md:text-5xl lg:text-7xl mb-3 font-bold">
-          CONNECT WITH US
-        </p>
-        <p className="text-sm md:text-base lg:text-lg text-gray-300 mb-6 md:mb-10">
-          Let's connect and bring your vision to life in the Computer Science
-          and Engineering community. We're excited to collaborate with you and
-          provide support to turn your ideas into reality.
-        </p>
-
-        {/* First Section - Let's Collaborate */}
-        <div className="flex flex-col items-center gap-5 mt-5">
-          <a
-            href="mailto:parliamentofaces2018@gmail.com"
-            className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid w-fit"
-          >
-            Let's Collaborate
-          </a>
-          <form className="flex flex-col gap-3 w-full max-w-sm">
-            <input
-              type="text"
-              placeholder="Name"
-              required
-              onChange={(e) => {
-                setCName(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              required
-              onChange={(e) => {
-                setCEmail(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full"
-            />
-            <textarea
-              placeholder="Message"
-              required
-              onChange={(e) => {
-                setCMessage(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full h-24 resize-none"
-            ></textarea>
-            <button
-              type="submit"
-              onClick={() => Submit(CName, CEmail, CMessage)}
-              className="bg-white text-black px-4 py-2 md:py-3 rounded-full font-bold transition duration-300 hover:bg-orchid hover:text-white"
-            >
-              Submit
-            </button>
-          </form>
+    <div className="min-h-screen bg-black text-white pt-32 pb-20 px-4 md:px-8 lg:px-16">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <span className="text-white">Get In </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
+              Touch
+            </span>
+          </h1>
+          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+            Have a question or want to collaborate? We'd love to hear from you.
+          </p>
         </div>
 
-        {/* Second Section - Post a Blog */}
-        <div className="flex flex-col items-center gap-5 mt-8 md:mt-10">
-          <a
-            href="mailto:parliamentofaces2018@gmail.com"
-            className="bg-[#111111] text-white px-6 py-3 md:py-4 rounded-full font-bold transition duration-300 hover:bg-orchid w-fit"
-          >
-            Post a Blog
-          </a>
-          <form className="flex flex-col gap-3 w-full max-w-sm">
-            <input
-              type="text"
-              placeholder="Name"
-              required
-              onChange={(e) => {
-                setBName(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              required
-              onChange={(e) => {
-                setBEmail(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full"
-            />
-            <textarea
-              placeholder="Message"
-              required
-              onChange={(e) => {
-                setBMessage(e.target.value);
-              }}
-              className="bg-[#111111] text-white p-3 rounded-lg w-full h-24 resize-none"
-            ></textarea>
-            <button
-              type="submit"
-              onClick={() => Blog(BName, BEmail, BMessage)}
-              className="bg-white text-black px-4 py-2 md:py-3 rounded-full font-bold transition duration-300 hover:bg-orchid hover:text-white"
-            >
-              Request a Blog
-            </button>
-          </form>
-        </div>
-      </div>
-
-      {/* Testimonials Section */}
-      <div className="relative max-w-2xl w-full text-center overflow-hidden py-5 md:py-10">
-        <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {testimonials.map((testimonial, index) => (
+        {/* Contact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          {contactInfo.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full flex flex-col items-center text-center gap-3"
+              className="group relative bg-gradient-to-br from-gray-900/50 to-black border border-gray-800/50 rounded-2xl p-8 hover:border-purple-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10"
             >
-              <img src={testimonial.image} alt={`Person ${index + 1}`} className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gray-400"/>
-              <h3 className="text-lg md:text-xl">{testimonial.name}</h3>
-              <p className="text-xs md:text-sm text-gray-300">{testimonial.subtitle}</p>
-              <p className="text-sm md:text-lg italic max-w-xl mx-auto">{testimonial.message}</p>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-4 bg-purple-600/10 rounded-full group-hover:bg-purple-600/20 transition-all duration-300">
+                  <div className="text-purple-400">{item.icon}</div>
+                </div>
+                <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                <p className="text-sm text-gray-400">{item.subtitle}</p>
+                {Array.isArray(item.content) ? (
+                  <div className="space-y-2">
+                    {item.content.map((phone, idx) => (
+                      <a
+                        key={idx}
+                        href={item.link[idx]}
+                        className="block text-purple-400 hover:text-purple-300 transition-colors font-medium"
+                      >
+                        {phone}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a
+                    href={item.link}
+                    className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+                  >
+                    {item.content}
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="absolute top-1/2 w-full flex justify-between transform -translate-y-1/2">
-          <span
-            onClick={() => changeTestimonial(-1)}
-            className="cursor-pointer text-lg md:text-2xl text-white px-3 md:px-4 select-none"
-          >
-            &#10094;
-          </span>
-          <span
-            onClick={() => changeTestimonial(1)}
-            className="cursor-pointer text-lg md:text-2xl text-white px-3 md:px-4 select-none"
-          >
-            &#10095;
-          </span>
+        {/* Social Media Section */}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Connect With Us
+            </h2>
+            <p className="text-gray-400">Follow us on social media for updates and insights</p>
+          </div>
+
+          <div className="flex justify-center items-center gap-6">
+            {socialLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group p-4 bg-gray-900/50 border border-gray-800/50 rounded-2xl transition-all duration-300 hover:scale-110 hover:border-purple-500/50 ${social.color}`}
+                title={social.name}
+              >
+                <div className="text-white group-hover:text-white transition-colors">
+                  {social.icon}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
 
-        <div className="flex justify-center mt-5">
-          {testimonials.map((_, index) => (
-            <span
-              key={index}
-              onClick={() => showTestimonial(index)}
-              className={`h-2 w-2 md:h-2.5 md:w-2.5 mx-1 bg-gray-500 rounded-full cursor-pointer ${index === currentIndex ? 'bg-white' : ''}`}
-            ></span>
-          ))}
+        {/* CTA Section */}
+        <div className="mt-20 text-center">
+          <div className="max-w-3xl mx-auto bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-3xl p-12">
+            <h3 className="text-3xl font-bold mb-4 text-white">
+              Ready to Collaborate?
+            </h3>
+            <p className="text-gray-400 mb-8 text-lg">
+              Join our community and be part of something amazing
+            </p>
+            <a
+              href="mailto:official@acesmitadt.com"
+              className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
+            >
+              Send us an Email
+            </a>
+          </div>
         </div>
       </div>
     </div>

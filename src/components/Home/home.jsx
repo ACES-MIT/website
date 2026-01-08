@@ -41,7 +41,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-x-hidden w-full">
       {/* <GradientBox position={{ top: '-115px', left: '-110px' }} width="250px" height="250px" color="#FF00E6"/> */}
       <GradientBox
         position={{ top: "-115px", left: "-110px" }}
@@ -56,12 +56,12 @@ function Home() {
       />
 
       <div className="min-h-screen bg-[#0e0d0d] text-white flex flex-col items-center">
-        <main className="text-center space-y-6 mt-36">
+        <main className="text-center space-y-6 pt-32 mt-8">
           <div ref={logoRef}>
             <img
               src={logo}
               alt="Center Logo"
-              className="h-44 w-auto mx-auto mb-12 mt-16"
+              className="h-40 md:h-44 w-auto mx-auto mb-12"
             />
           </div>
           <div
@@ -88,17 +88,42 @@ function Home() {
           </a>
         </main>
       </div>
-      <div className="flex justify-center bg-[#0e0d0d] text-white py-5 px-6">
-        <div className="container mx-auto max-w-6xl rounded-3xl">
-          <div className="flex justify-center border-t border-t-white border-opacity-25 rounded-3xl">
-            <h3 className="text-base font-medium mt-5 mb-3 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
-              UPCOMING EVENTS
-            </h3>
+      
+      {/* Divider Border */}
+      <div className="bg-[#0e0d0d] px-6 py-6">
+        <div className="container mx-auto max-w-7xl border-2 border-gray-600 rounded-2xl h-px"></div>
+      </div>
+      
+      {/* Upcoming Events Section */}
+      <div className="bg-[#0e0d0d] text-white py-20 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Events Title & Description */}
+            <div className="flex flex-col justify-center space-y-6">
+              <div className="flex flex-col items-start">
+                <div className="inline-block">
+                  <span className="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-4 block">
+                    What's Happening
+                  </span>
+                  <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
+                    Upcoming Events
+                  </h2>
+                  <div className="w-20 h-1 bg-white rounded-full mb-6"></div>
+                </div>
+                <p className="text-lg text-gray-400 leading-relaxed max-w-lg">
+                  Discover our latest events and join our vibrant community. From technical workshops to cultural celebrations, there's something for everyone.
+                </p>
+              </div>
+            </div>
+            
+            {/* Right Side - Event Cards */}
+            <div className="flex justify-center items-center">
+              <div className="w-full">
+                <Event />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-[#0e0d0d] flex justify-center items-center w-full min-h-screen">
-        <Event />
       </div>
 
       <div className="bg-[#0e0d0d] text-white  pt-16 pb-1 px-6">
@@ -111,29 +136,37 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-[#0e0d0d] flex flex-col h-full w-full m-0 p-0">
-        <div className="flex flex-wrap justify-center md:gap-14 gap-4 mt-[3%]">
-          {FacultyData_Top
-            ? FacultyData_Top.map((el) => (
-                <Faculty
-                  Name={el.Name}
-                  position={el.position}
-                  Image={el.Image}
-                />
-              ))
-            : ""}
-        </div>
+      <div className="bg-[#0e0d0d] py-12 px-6 overflow-hidden">
+        <div className="container mx-auto max-w-7xl">
+          <div className="overflow-hidden pb-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 place-items-center relative">
+              {FacultyData_Top
+                ? FacultyData_Top.map((el, index) => (
+                    <Faculty
+                      key={index}
+                      Name={el.Name}
+                      position={el.position}
+                      Image={el.Image}
+                    />
+                  ))
+                : ""}
+            </div>
+          </div>
 
-        <div className="flex flex-wrap justify-center md:gap-14 gap-4 mt-[3%]">
-          {FacultyData_Bottom
-            ? FacultyData_Bottom.map((el) => (
-                <Faculty
-                  Name={el.Name}
-                  position={el.position}
-                  Image={el.Image}
-                />
-              ))
-            : ""}
+          <div className="overflow-hidden pb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 place-items-center relative">
+              {FacultyData_Bottom
+                ? FacultyData_Bottom.map((el, index) => (
+                    <Faculty
+                      key={index}
+                      Name={el.Name}
+                      position={el.position}
+                      Image={el.Image}
+                    />
+                  ))
+                : ""}
+            </div>
+          </div>
         </div>
       </div>
       <StatsSection />

@@ -14,7 +14,7 @@ function About() {
     onTop();
   }, [routePath]);
   return (
-    <div className="min-h-screen bg-black text-white mt-24">
+    <div className="min-h-screen bg-black text-white pt-[105px]">
       <AboutAces />
       <MoreInfo />
       <StatsSection />

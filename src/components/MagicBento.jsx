@@ -454,8 +454,8 @@ const GlobalSpotlight = ({
 
 const BentoCardGrid = ({ children, gridRef }) => (
   <div
-    className="bento-section grid gap-2 p-3 max-w-[54rem] select-none relative"
-    style={{ fontSize: 'clamp(1rem, 0.9rem + 0.5vw, 1.5rem)' }}
+    className="bento-section grid gap-2 p-3 max-w-full sm:max-w-[54rem] select-none relative mx-auto"
+    style={{ fontSize: 'clamp(0.95rem, 0.85rem + 0.4vw, 1.15rem)' }}
     ref={gridRef}>
     {children}
   </div>
@@ -610,15 +610,19 @@ const MagicBento = ({
           @media (max-width: 599px) {
             .card-responsive {
               grid-template-columns: 1fr;
-              width: 90%;
+              /* Increase mobile container size so cards are more readable */
+              width: min(460px, 96%);
               margin: 0 auto;
-              padding: 0.5rem;
+              padding: 1rem;
+              justify-items: center;
             }
-            
+
             .card-responsive .card {
-              width: 100%;
-              min-height: 180px;
-            }
+                width: 100%;
+                max-width: 440px;
+                min-height: 300px; /* larger for clearer posters and text */
+                padding: 1rem; /* more breathing room on mobile */
+              }
           }
         `}
       </style>
@@ -633,7 +637,7 @@ const MagicBento = ({
       <BentoCardGrid gridRef={gridRef}>
         <div className="card-responsive grid gap-2">
           {cardData.map((card, index) => {
-            const baseClassName = `card flex flex-col justify-between relative aspect-[4/3] min-h-[200px] w-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
+            const baseClassName = `card flex flex-col justify-between relative aspect-[3/4] sm:aspect-[4/3] min-h-[140px] sm:min-h-[200px] w-full max-w-full p-4 sm:p-5 rounded-[16px] sm:rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''
             }`;
 
@@ -663,7 +667,7 @@ const MagicBento = ({
                     <img
                       src={card.image}
                       alt={card.title}
-                      className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
+                      className="absolute inset-0 w-full h-full object-contain sm:object-cover rounded-[16px] sm:rounded-[20px]"
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-[20px]" />
@@ -798,7 +802,7 @@ const MagicBento = ({
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-[20px]"
+                    className="absolute inset-0 w-full h-full object-contain sm:object-cover rounded-[16px] sm:rounded-[20px]"
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-[20px]" />

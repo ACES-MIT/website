@@ -18,8 +18,8 @@ const EventMemories = () => {
           </p>
         </div>
 
-        {/* Magic Bento Grid - Centered with increased width and height */}
-        <div className="flex items-center justify-center w-full transform scale-125">
+        {/* Magic Bento Grid - Centered with responsive scaling */}
+        <div className="flex items-center justify-center w-full transform md:scale-125 scale-100">
           <MagicBento />
         </div>
       </div>

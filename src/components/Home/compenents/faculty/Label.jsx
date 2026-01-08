@@ -1,9 +1,9 @@
 
 const Faculty = ({ Name, position, Image }) => {
   return (
-    <div className="group w-full max-w-[280px] bg-gradient-to-b from-[rgb(35,35,35)] to-[rgb(25,25,25)] 
+    <div className="group relative w-full max-w-[280px] bg-gradient-to-b from-[rgb(35,35,35)] to-[rgb(25,25,25)] 
       border-t-2 border-gray-500 rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
-      hover:scale-[1.02] hover:shadow-lg hover:shadow-gray-700/30 hover:border-t-blue-400">
+      hover:scale-[1.02] hover:shadow-lg hover:shadow-gray-700/30 hover:border-t-blue-400 hover:z-50">
       <div className="flex flex-col h-full">
         <div
           style={{ 

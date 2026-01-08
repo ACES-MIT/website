@@ -32,7 +32,7 @@ const Navbar = () => {
     },
     {
       name: "RSVP",
-      link: "/register",
+      link: "https://acd.acesmitadt.com/",
       icon: <IconCalendarEvent className="h-5 w-5 text-neutral-500 dark:text-white" />,
       isButton: true,
     },

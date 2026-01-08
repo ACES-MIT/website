@@ -1,80 +1,59 @@
 export const pastEventsData = [
   {
     id: 1,
-    title: "Tech Summit 2024",
-    date: "March 15, 2024",
-    participants: "250+",
-    category: "Technical",
-    description: "A comprehensive technology summit featuring industry experts, workshops, and networking opportunities for tech enthusiasts.",
+    title: "Handover Ceremony 2025",
+    date: "August 26, 2025",
+    participants: "100+",
+    category: "Social",
+    description: "Ceremonial transition of responsibilities from the outgoing ACES core team to the newly elected members, fostering continuity and leadership.",
     images: [
-      "/BestTeam/IMG_2015.jpg",
-      "/BestTeam/IMG_2645.jpg",
-      "/BestTeam/IMG_2726.jpg"
+      "/Handover/6.jpg", "/Handover/7.jpg", "/Handover/11.jpg"
     ]
   },
   {
     id: 2,
-    title: "Code Sprint 2024",
-    date: "February 20, 2024",
-    participants: "180+",
-    category: "Competition",
-    description: "24-hour coding marathon where teams competed to build innovative solutions to real-world problems.",
+    title: "Shakti 2.0",
+    date: "October 7, 2025",
+    participants: "700+",
+    category: "Cultural",
+    description: "An intercollege cultural celebration of women empowerment featuring music, dance, poetry, drama, and inspiring guest addresses.",
     images: [
-      "/BestTeam/IMG_4183.JPG",
-      "/BestTeam/IMG_5458.jpg",
-      "/BestTeam/club.jpg"
+      "/Shakti 2.0/25.jpg", "/Shakti 2.0/26.jpg", "/Shakti 2.0/27.jpg","/Shakti 2.0/28.jpg"
     ]
   },
   {
     id: 3,
-    title: "AI Workshop Series",
-    date: "January 10, 2024",
-    participants: "320+",
-    category: "Workshop",
-    description: "Intensive workshop series covering Machine Learning, Deep Learning, and AI applications in various domains.",
+    title: "Tree Plantation Drive",
+    date: "October 9, 2025",
+    participants: "150+",
+    category: "Awareness",
+    description: "An environmental sustainability initiative promoting green cover, social responsibility, and eco-consciousness on campus.",
     images: [
-      "/BestTeam/IMG_2645.jpg",
-      "/BestTeam/IMG_2726.jpg",
-      "/BestTeam/IMG_2015.jpg"
+     "/Tree Plantation/36.jpg", "/Tree Plantation/37.png", "/Tree Plantation/38.png"
     ]
   },
   {
     id: 4,
-    title: "Tech Fest 2023",
-    date: "December 5, 2023",
-    participants: "400+",
-    category: "Festival",
-    description: "Annual technology festival featuring competitions, exhibitions, and guest lectures from industry leaders.",
+    title: "Vision Voyage 2.0",
+    date: "September 3, 2025",
+    participants: "700+",
+    category: "Technical",
+    description: "A guidance-focused intercollege event connecting students with alumni and experts to provide academic, career, and skill-development roadmaps.",
     images: [
-      "/BestTeam/IMG_5458.jpg",
-      "/BestTeam/club.jpg",
-      "/BestTeam/IMG_4183.JPG"
+    "/Vision Voyage/46.jpg", "/Vision Voyage/47.jpg", "/Vision Voyage/48.jpg","/Vision Voyage/49.jpg"
     ]
   },
   {
     id: 5,
-    title: "Cyber Security Awareness",
-    date: "November 15, 2023",
+    title: "Teacher’s Day Celebration 2025",
+    date: "September 5, 2025",
     participants: "200+",
-    category: "Awareness",
-    description: "Awareness program on cyber security best practices, data protection, and online safety measures.",
+    category: "Cultural",
+    description: "A heartfelt celebration honoring faculty through performances, speeches, and appreciation activities organized by ACES.",
     images: [
-      "/BestTeam/IMG_2726.jpg",
-      "/BestTeam/IMG_2015.jpg",
-      "/BestTeam/IMG_2645.jpg"
-    ]
-  },
-  {
-    id: 6,
-    title: "Hackathon 2023",
-    date: "October 8, 2023",
-    participants: "500+",
-    category: "Competition",
-    description: "48-hour hackathon bringing together developers, designers, and innovators to create impactful solutions.",
-    images: [
-      "/BestTeam/club.jpg",
-      "/BestTeam/IMG_4183.JPG",
-      "/BestTeam/IMG_5458.jpg"
+      "/T-day/61.jpg",
+      "/T-day/62.jpg",
+      "/T-day/63.jpg"
     ]
   }
 ];
@@ -82,18 +61,18 @@ export const pastEventsData = [
 export const eventCategories = [
   "All",
   "Technical",
-  "Competition",
-  "Workshop",
-  "Festival",
+  "Cultural",
+  "Social",
   "Awareness"
 ];
+
 
 export const eventMemoriesData = [
   {
     id: 1,
-    tag: "Innovation",
-    title: "Tech Summit 2024",
-    description: "Industry leaders sharing insights",
+    tag: "Club Catalyst",
+    title: "Best Club Award 2024",
+    description: "Club catalyst winners 2024",
     image: "/BestTeam/IMG_2015.jpg",
     size: "small"
   },

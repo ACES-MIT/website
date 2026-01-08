@@ -42,12 +42,12 @@ const StatItem = ({ number, label }) => (
 
 const StatsSection = () => {
   return (
-    <div className="bg-black text-white py-16 px-4 sm:px-6">
+    <div className="bg-black text-white py-12 px-4 sm:px-6 mt-8">
       <div className="container mx-auto max-w-6xl">
-    <div className="border-t border-t-white border-opacity-25  rounded-3xl">
+    <div className="border-t border-t-white/10 rounded-3xl">
       {/* Height for different screen sizes */}
       <div className="-mt-5 md:mb-8 flex justify-center sm:justify-center md:justify-start lg:justify-start xl:justify-start mb-10">
-  <h2 className="mt-9 ml-1 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white border-opacity-25 
+  <h2 className="mt-9 ml-1 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white/10
                  sm:w-[150px] md:w-[120px] lg:w-auto xl:w-auto md:px-6 sm:px-10 px-10">
     OUR STATS   
   </h2>

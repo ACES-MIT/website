@@ -22,18 +22,20 @@ const gradientConfig2 = {
 
 function AboutAces() {
   return (
-    <div className=" text-white text-center py-8 md:py-12 lg:py-16 relative">
+    <div className="text-white text-center py-4 md:py-6 lg:py-8 relative">
       <GradientBox {...gradientConfig1} />
-      <h1 className="text-6xl md:text-8xl lg:text-7xl font-bold mb-4 md:mb-6 lg:mb-8 animate-riseUpSlow delay-75">
-        ABOUT ACES
-      </h1>
-      <p className="text-base font-bold md:text-5xl lg:text-2xl mb-2 md:mb-3 lg:mb-4 block animate-riseUpSlow delay-550">
-        "For the Students, By the Students"
-      </p>
-      <p className="text-base md:text-lg lg:text-2xl block animate-riseUpSlow delay-550">
-        We are not a Club, We are an Association.
-        <p>Committed to the principles of Unity, Support, and Dedication.</p>
-      </p>
+      <div className="max-w-5xl mx-auto px-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-10 animate-riseUpSlow delay-75 leading-tight">
+          ABOUT ACES
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl font-semibold mb-6 md:mb-8 animate-riseUpSlow delay-550 text-purple-300">
+          "For the Students, By the Students"
+        </p>
+        <div className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 animate-riseUpSlow delay-550 space-y-3">
+          <p>We are not a Club, We are an Association.</p>
+          <p>Committed to the principles of Unity, Support, and Dedication.</p>
+        </div>
+      </div>
       <GradientBox {...gradientConfig2} />
     </div>
   );

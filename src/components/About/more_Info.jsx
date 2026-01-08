@@ -24,14 +24,14 @@ const gradientConfig2 = {
       // <GradientBox {...gradientConfig1} />
      
       
-      <div className="container mx-auto px-4 sm:px-6 my-12 mb-8 md:mb-16 flex flex-col md:flex-row items-center justify-between md:space-x-10">
-        <div className="flex items-center justify-center md:justify-start md:items-start md:w-1/3 md:pr-8 md:ml-10 mb-6 md:mb-0">
-          <button className="bg-[#111111] mt-10 text-lg md:text-xl font-medium inline-block px-6 py-3 rounded-full">
+      <div className="container mx-auto px-4 sm:px-6 my-6 flex flex-col md:flex-row items-center justify-between md:space-x-10">
+        <div className="flex items-center justify-center md:justify-start md:items-start md:w-1/3 md:pr-8 md:ml-10 mb-4 md:mb-0">
+          <button className="bg-[#111111] text-lg md:text-xl font-medium inline-block px-6 py-3 rounded-full">
             MORE INFO
           </button>
         </div>
         <div className="flex flex-col text-center md:text-left md:w-2/3 md:mr-10 px-4 md:px-0">
-          <p className="mb-6 text-xl">
+          <p className="mb-4 text-lg md:text-xl">
             ACES, the oldest and largest club at MIT ADT University's School of Computing, is a vibrant techno-cultural organization established in 2018-19. It empowers students with opportunities that go beyond academics, nurturing leadership, technical expertise, and cultural interests. Renowned for its consistency and dynamic events, ACES fosters excellence while building a strong sense of community among students and faculty alike.
           </p>
           <p className="text-xl">

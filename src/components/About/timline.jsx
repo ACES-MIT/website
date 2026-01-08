@@ -154,19 +154,19 @@ const Timeline = () => {
   return (
     <div lassName="min-h-screen bg-black text-white">
       
-      <div className="bg-black text-white p-4 md:p-8 mt-32">
+      <div className="bg-black text-white p-4 md:p-8 mt-8">
       
   {/* Header Section */}
-  <div className="mb-8 md:mb-16 flex flex-col md:flex-row items-center" >
-    <button className="bg-[#111111] ml-15 mt-10 text-lg md:text-xl font-medium inline-block px-4 py-2 rounded-full mb-4 md:mb-0 md:mr-4">
+  <div className="mb-6 md:mb-10 flex flex-col md:flex-row items-center" >
+    <button className="bg-[#111111] text-lg md:text-xl font-medium inline-block px-4 py-2 rounded-full mb-4 md:mb-0 md:mr-4">
       OUR MILESTONES
     </button>
-    <p className="text-center mt-10 md:text-left text-base md:text-2xl max-w-2xl md:mr-8 md:ml-auto px-2">
+    <p className="text-center md:text-left text-base md:text-xl max-w-2xl md:mr-8 md:ml-auto px-2">
     The journey of ACES over the years reflects a legacy of growth, innovation, and unwavering dedication.
     </p>
   </div>
        </div>
-        <section className="bg-black mb-20 mx-12 md:mx-12">
+        <section className="bg-black mb-12 mx-12 md:mx-12">
           <div className="md:mt-24 mt-12 text-[#CA80FF]">
             <div className="hidden md:block mt-12 mb-72">
               {/* Timeline for desktop */}

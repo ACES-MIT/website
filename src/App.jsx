@@ -19,6 +19,7 @@ import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditio
 import PaymentTerms from "./components/PaymentTerms/PaymentTerms";
 import RazorpayRequirements from "./components/RazorpayRequirements/RazorpayRequirements";
 import ScrollToTop from "./components/ScrollToTop";
+import PastEvents from "./components/PastEvents/PastEvents";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/our-Team" element={<OurTeam />} />
+          <Route path="/past-events" element={<PastEvents />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/register" element={<EventRegistrationForm />} />
           <Route path="/login" element={<Login />} />

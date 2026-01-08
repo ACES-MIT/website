@@ -32,7 +32,7 @@ export const FloatingNav = ({ navItems, className, logo }) => {
   });
 
   return (
-    <AnimatePresence mode="wait">
+    <>
       <motion.div
         initial={{
           opacity: 1,
@@ -67,7 +67,7 @@ export const FloatingNav = ({ navItems, className, logo }) => {
             .filter((item) => !item.isButton)
             .map((navItem, idx) => (
               <Link
-                key={`link=${idx}`}
+                key={`link-${idx}`}
                 to={navItem.link}
                 className={cn(
                   "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 transition-all duration-300 hover:scale-110 hover:text-purple-600 dark:hover:text-purple-400"
@@ -113,7 +113,7 @@ export const FloatingNav = ({ navItems, className, logo }) => {
                 .filter((item) => !item.isButton)
                 .map((navItem, idx) => (
                   <Link
-                    key={`mobile-link=${idx}`}
+                    key={`mobile-link-${idx}`}
                     to={navItem.link}
                     onClick={() => setMobileMenuOpen(false)}
                     className="flex items-center space-x-3 text-white hover:text-purple-400 transition-colors duration-300 py-2"
@@ -137,6 +137,6 @@ export const FloatingNav = ({ navItems, className, logo }) => {
           </motion.div>
         )}
       </AnimatePresence>
-    </AnimatePresence>
+    </>
   );
 };

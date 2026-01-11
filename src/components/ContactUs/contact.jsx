@@ -23,8 +23,8 @@ const ContactPage = () => {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
       subtitle: "Mon-Fri from 9am to 5pm",
-      content: ["+91 98765 43210", "+91 87654 32109"],
-      link: ["tel:+919876543210", "tel:+918765432109"],
+      content: ["Aayush: +91 92267 50350", "Shivam: +91 90652 61815"],
+      link: ["tel:+919226750350", "tel:+919065261815"],
     },
     {
       icon: <MapPin className="w-6 h-6" />,

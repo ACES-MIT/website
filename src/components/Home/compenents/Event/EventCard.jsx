@@ -73,11 +73,11 @@ const EventCard = ({ data }) => {
     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <CardContent key="front">
-          <div className="relative w-full h-full group">
+          <div className="relative w-full h-full group bg-black">
             <img
               src={data?.Image}
               alt={data?.Name}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+              className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
             />
             
             {/* Click hint */}

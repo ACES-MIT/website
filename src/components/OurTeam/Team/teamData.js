@@ -18,7 +18,7 @@ export const coreTeamMembers = [
     name: 'Shreya Keshri',
     role: 'Joint Secretary',  
 
-    
+
     image: '/images/Shreya.jpg'
   },
   {
@@ -43,7 +43,7 @@ export const coreTeamMembers = [
   },
     {
     name: 'Sanskruti Chillatre',
-    role: 'Community Manager',
+    role: 'Public Relations Officer',
     image: '/images/Sanskruti.jpeg'
   }
 ];

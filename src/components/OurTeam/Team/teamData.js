@@ -1,458 +1,328 @@
 export const coreTeamMembers = [
   {
-    name: 'Aayush Dalvi',
-    role: 'President',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105866/AayushDalvi_cw9ytn.jpg'
-  },
-  {
-    name: 'Shivam Jha',
-    role: 'Vice President',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105867/Shivam_Jha_c0pf9h.jpg'
-  }
-  ,
-  {
-    name: 'Vedika Bhoite',
-    role: 'Vice President',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105876/Vedika_Bhoite_qiky0z.jpg'
-  },{
-    name: 'Vedant Ghule',
-    role: 'Joint Secretary',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767105866/Vedant_Ghule_ynyjod.jpg'
-  },{
     name: 'Shivansh Sinha',
-    role: 'Secretary',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767106083/Shivansh_arzltg.jpg'
+    role: 'President',
+    image: '/images/Shivanshp.JPG'
   },
   {
-    name: 'Ishan',
-    role: 'Treasurer',
-    image: 'https://res.cloudinary.com/dtoxlqpkf/image/upload/v1767106083/Ishan_photo_hszdgk.jpg'
+    name: 'Tejas Deshpande',
+    role: 'Vice President',
+    image: '/images/TejasDeshpande _Vice President .jpg'
   },
- 
+  {
+    name: 'Isha Parihar',
+    role: 'Vice President',
+    image: '/images/Isha Parihar_Vice President .jpg'
+  },
+  {
+    name: 'Shreya Keshri',
+    role: 'Joint Secretary',
+    image: '/images/Shreya.jpg'
+  },
+  {
+    name: 'Anurag Jha',
+    role: 'General Secretary',
+    image: '/images/Anurag Kumar_General Secretary.jpeg'
+  },
+  {
+    name: 'Divyansh Rathore',
+    role: 'Treasurer',
+    image: '/images/Divyansh.JPG'
+  },
+  {
+    name: 'Soham Deshpande',
+    role: 'Treasurer',
+    image: '/images/Soham Deshpande_ treasurer.jpg'
+  },
+    {
+    name: 'Dakshuta Dubey',
+    role: 'Community Manager',
+    image: '/images/Dakshuta.jpg'
+  },
+    {
+    name: 'Sanskruti Chillatre',
+    role: 'Community Manager',
+    image: '/images/Sanskruti.jpeg'
+  }
 ];
+
 
 export const technicalTeamMembers = [
   {
-    name: 'Devak Khandelwal',
+    name: 'Akshat Prakhar',
     role: 'Tech Team Lead',
-    image: 'images/Devak Khandelwal.jpg'
+    image: '/images/Akshat Prakhar_Teach Lead.png'
   },
   {
-    name: 'Celcilin C S',
+    name: 'Atharva Kumar',
     role: 'Tech Team Lead',
-    image: 'images/CELCILIN.jpg'
+    image: '/images/Atharva Kumar_Technical Team .jpg'
   },
   {
-    name: 'Shivam Khode',
+    name: 'Jiya Gupta',
     role: 'Tech Team Member',
-    image: 'images/Shivam Khode.jpg'
+    image: '/images/JiyaGupta_Tech Team member.jpg'
   },
   {
-    name: 'Shreyanshu Maske',
+    name: 'Akshita Tyagi',
     role: 'Tech Team Member',
-    image: '/images/Shreyanshu Maske.jpg'
-  } 
-  ,
+    image: '/images/Akshita Tyagi_Tech Team Member.jpg'
+  },
   {
-    name: 'Tanvi Bokade',
+    name: 'Anjali Jha',
     role: 'Tech Team Member',
-    image: 'images/tanvi bokade.jpg'
+    image: '/images/AnjaliJha_Tech Team Members.jpg'
+  },
+  {
+    name: 'Ayush Purohit',
+    role: 'Tech Team Member',
+    image: '/images/ayushpurohit_tech_team.png'
+  },
+  {
+    name: 'Isha Kumari',
+    role: 'Tech Team Member',
+    image: '/images/Isha kumari_Tech member.png'
+  },
+  {
+    name: 'Soham Patil',
+    role: 'Tech Team Member',
+    image: '/images/Soham_Tech Team Member.png'
+  },
+  {
+    name: 'Navya',
+    role: 'Tech Team Member',
+    image: '/images/Navya Tupakula_Tech Team Member.jpg'
+  },
+  {
+    name: 'Sharad',
+    role: 'Tech Team Member',
+    image: '/images/SharadShikanyaTech team member.png'
+  },
+  {
+    name: 'Sheetal',
+    role: 'Tech Team Member',
+    image: '/images/Sheetal_Tech Team Member.jpg'
+  },
+  {
+    name: 'Shree',
+    role: 'Tech Team Member',
+    image: '/images/Shree mhatre_Tech Team Member.jpg'
+  },
+  {
+    name: 'Siddhant Kalagate',
+    role: 'Tech Team Member',
+    image: '/images/Siddhant_kalagate .png'
+  },
+  {
+    name: 'Udaybir',
+    role: 'Tech Team Member',
+    image: '/images/udaybir_techteam.jpeg'
+  },
+  {
+    name: 'Vaibhav',
+    role: 'Tech Team Member',
+    image: '/images/Vaibhav_Tech team member.jpg'
+  },
+  {
+    name: 'Varad Karpate',
+    role: 'Tech Team Member',
+    image: '/images/VaradKarpate_Tech team member.png'
+  },
+  {
+    name: 'Vijaylaxmi',
+    role: 'Tech Team Member',
+    image: '/images/Vijayalakshmi_techteam.jpg'
   }
-  ,
-  {
-    name: 'Priyansh',
-    role: 'Tech Team Member',
-    image: 'images/priyansh.jpg'
-  },
-  {
-    name: 'Parth Bhende',
-    role: 'Tech Team Member',
-    image: 'images/Parth bhende.JPG'
-  },
-  {
-    name: 'Soham Hipparkar',
-    role: 'Tech Team Member',
-    image: 'images/SohamHipparkar.png'
-  }
-  ,{
-    name: 'Shubham Karna',
-    role: 'Tech Team Member',
-    image: 'images/ShubhamKarna.jpeg'
-  }
-  
 ];
 
-export const designTeamMembers = [
 
-  {
-    name: 'Aryan',
-    role: 'Design Team Lead',
-    image: 'images/aryan Varale.png'
-  } 
-   ,
-  {
-    name: 'Abha ',
-    role: 'Design Team Member',
-    image: 'images/abha Deshmukh.jpg'
-  },
-  {
-    name: 'Disha',
-    role: 'Design Team Member',
-    image: '/images/Disha Kumbhar .JPG'
-  } 
-  ,
-  {
-    name: 'Neelambari',
-    role: 'Design Team Member',
-    image: 'images/Neelambari Hivarale .jpg'
-  }
-  ,
-{
-    name: 'Heyaa',
-    role: 'Design Team Member',
-    image: 'images/Heyaa Nawale.jpg'
-  }
-  ,{
-    name: 'Aanchal',
-    role: 'Design Team Member',
-    image: 'images/Aanchal Tamboli .png'
-  }
+export const designTeamMembers = [];
 
-  ,
-  {
-    name: 'Sourya',
-    role: 'Design Team Member',
-    image: 'images/Shourya Shah.jpg'
-  }
-
-];
- 
 
 export const PromotionsTeamMembers = [
-
   {
-    name: 'Ayush Patil',
+    name: 'Jaishna Kakkar',
     role: 'Promotions Team Lead',
-    image: '/images/Ayush Patil.jpg'
-},
+    image: '/images/Jaishna.PNG'
+  },
   {
-    name: 'Tejas Deshpande',
+    name: 'Om Lahane',
     role: 'Promotions Team Member',
-    image: '/images/Tejas Deshpande.jpg'
-},
-
-{
-    name: 'Sanskruti Chilatre',
+    image: '/images/Om Lahane_Promotion Team.jpg'
+  },
+  {
+    name: 'Shreekrushna Shinde',
     role: 'Promotions Team Member',
-    image: '/images/Sanskruti Chilatre.JPG'
-},
-
-{
-    name: 'Sanika Satkar',
-    role: 'Promotions Team Member',
-    image: '/images/Sanika Satkar.jpg'
-},
-
-{
-    name: 'Riya Chavan',
-    role: 'Promotions Team Member',
-    image: 'images/Riya Chavan.jpeg'
-},
-
-{
-    name: 'Prathamesh Bunde',
-    role: 'Promotions Team Member',
-    image: '/images/Prathamesh Bunde.JPG'
-},
-
-{
-    name: 'Malhar Kulkarni',
-    role: 'Promotions Team Member',
-    image: '/images/Malhar kulkarni.PNG'
-},
-
-{
-    name: 'Kshitij Rai',
-    role: 'Promotions Team Member',
-    image: '/images/Kshitij Rai.jpg'
-},
-
-{
-    name: 'Jiya Sharma',
-    role: 'Promotions Team Member',
-    image: '/images/Jiya Sharma.JPG'
-},
-
-
-
-{
-    name: 'Atul Tharkar',
-    role: 'Promotions Team Member',
-    image: '/images/Atul Tharkar.JPG'
-}
-
+    image: '/images/Shreekrushna shinde_ promotion member.jpg'
+  }
 ];
 
-export const ContentTeamMembers = [
 
+export const DocumentationTeamMembers = [
   {
-    name: 'Vedika Bhoite',
-    role: 'Content Team Lead',
-    image: '/images/Vedika Bhoite .jpg'
-},
+    name: 'Jiya Bhavsar',
+    role: 'Documentation Team Lead',
+    image: '/images/JIYA.jpeg'
+  },
   {
-    name: 'Aryan Khalati',
-    role: 'Content Team Member',
-    image: '/images/Aryan Khalati - Content.jpg'
-},
-{
-    name: 'Yash Gaikwad',
-    role: 'Content Team Member',
-    image: '/images/Yash Gaikwad.jpeg'
-},
-
-
-
-{
-    name: 'Vedant Sonawane',
-    role: 'Content Team Member',
-    image: '/images/Vedant Sonawane-Content.jpeg'
-},
-
-{
-    name: 'Monika Jadhav',
-    role: 'Content Team Member',
-    image: '/images/Monika Jadhav - Content.jpg'
-},
-
-{
-    name: 'Ishita Pasalkar',
-    role: 'Content Team Member',
-    image: '/images/Ishita Pasalkar-Content.jpeg'
-},
-
-
-
-{
-    name: 'Aryaman Futane',
-    role: 'Content Team Member',
-    image: '/images/AryamanFutane content team.jpeg'
-},
-
-
+    name: 'Yutika Patel',
+    role: 'Documentation Team Lead',
+    image: '/images/Yutika.jpg'
+  },
+  {
+    name: 'Abhimanyu Shinde',
+    role: 'Documentation Team Member',
+    image: '/images/Abhimanyu _Shinde-Documentation Team-Team member.jpg'
+  },
+  {
+    name: 'Pranjali Jadhavrao',
+    role: 'Documentation Team Member',
+    image: '/images/Pranjali Jadhavrao.PNG'
+  },
+  {
+    name: 'R Vedhnath',
+    role: 'Documentation Team Member',
+    image: '/images/R Vedhanth_Documentation Team.jpeg'
+  },
+  {
+    name: 'Shreya Shinde',
+    role: 'Documentation Team Member',
+    image: '/images/Shreya shinde_documents team.png'
+  },
+  {
+    name: 'Tanaya Dinesh',
+    role: 'Documentation Team Member',
+    image: '/images/Tanaya.jpg'
+  }
 ];
+
 
 export const FinanceTeamMembers = [
   {
-    name: 'Shivam Kumar Jha',
+    name: 'Shravni Desai',
     role: 'Finance Team Lead',
-    image: '/images/Shivam Jha.jpg'
-},
-
+    image: '/images/Shravni Desai_Finance and Logistics lead.jpg'
+  },
   {
-    name: 'Tanishka',
+    name: 'Atharva Shinde',
+    role: 'Finance Team Lead',
+    image: '/images/Atharv Shinde Finance and logistics lead .png'
+  },
+  {
+    name: 'Anshika Gupta',
     role: 'Finance Team Member',
-    image: '/images/Tanishka_.jpg'
-},
-
-
-
-{
-    name: 'Ishan',
+    image: '/images/AnshikaGupta_FinanceTeam.jpg'
+  },
+  {
+    name: 'Arnav Patil',
     role: 'Finance Team Member',
-    image: '/images/Ishan_.jpg'
-},
-
-{
-    name: 'Archit Jagtap',
+    image: '/images/Arnav Patil.png'
+  },
+  {
+    name: 'OM Thagne',
     role: 'Finance Team Member',
-    image: '/images/Archit jagtap_.png'
-},
-
-{
-    name: 'Aniket Panchal',
+    image: '/images/OM Thange.png'
+  },
+  {
+    name: 'Soham Sangale',
     role: 'Finance Team Member',
-    image: '/images/Aniket Tukaram panchal_.jpg'
-},
-
-
+    image: '/images/Soham Sangale_Finance and logistics.png'
+  },
+  {
+    name: 'Vishal Giramkar',
+    role: 'Finance Team Member',
+    image: '/images/VishalGiramkar_F&L.png'
+  }
 ];
+
 
 export const CulturalTeamMembers = [
-
-
   {
-    name: 'Srushti Kulkarni',
+    name: 'Anushka Newase',
     role: 'Cultural Team Lead',
-    image: '/images/srushti Kulkarni.jpg'
-},
-{
-    name: 'Shahid Patel',
-    role: 'Cultural Team Lead',
-    image: '/images/Shahid Patel.jpg'
-},
-{
-  name: 'Avni Barde',
-  role: 'Cultural Team Member',
-  image: '/images/Avni Barde.JPG'
-},
-
+    image: '/images/Anusha.jpg'
+  },
   {
-    name: 'Yash Gutte',
+    name: 'Ansh Kamkar',
     role: 'Cultural Team Member',
-    image: '/images/Yash Gutte.jpg'
-},
-
-{
-    name: 'Vedant Ghule',
+    image: '/images/AnshKamkar_Cultural Team Member.jpg'
+  },
+  {
+    name: 'Atharva Dalke',
     role: 'Cultural Team Member',
-    image: '/images/Vedant Ghule.jpg'
-},
-
-{
-    name: 'Tejas Gupta',
+    image: '/images/AtharvDalke_CulturalTeamMember.png'
+  },
+  {
+    name: 'Cynthia Pawar',
     role: 'Cultural Team Member',
-    image: '/images/TEJAS GUPTA.jpeg'
-},
-
-
-{
-    name: 'Sri Pranathi',
+    image: '/images/Cynthia Pawar_culturalt team.jpg'
+  },
+  {
+    name: 'Garima Yadav',
     role: 'Cultural Team Member',
-    image: '/images/Sri Pranathi.jpg'
-},
-
-{
-    name: 'Shivansh',
+    image: '/images/Garima Yadav_Cultural .jpg'
+  },
+  {
+    name: 'Sameeksha Kamble',
     role: 'Cultural Team Member',
-    image: '/images/Shivansh.jpg'
-},
-
-{
-    name: 'Saurabh Sakhare',
+    image: '/images/Sameeksha kamble _cultural team member .png'
+  },
+  {
+    name: 'Siddhi Jadhav',
     role: 'Cultural Team Member',
-    image: '/images/Saurabh sakhare.jpg'
-},
-
-{
-    name: 'Saishh Jagtap',
-    role: 'Cultural Team Member',
-    image: '/images/Saishh Jagtap.jpg'
-},
-
-{
-    name: 'Sairaj',
-    role: 'Cultural Team Member',
-    image: '/images/Sairaj.jpg'
-},
-
-{
-    name: 'Reva Raspaile',
-    role: 'Cultural Team Member',
-    image: '/images/Reva raspaile.jpg'
-},
-
-{
-    name: 'Pranav',
-    role: 'Cultural Team Member',
-    image: '/images/Pranav.jpg'
-},
-
-{
-    name: 'Mansi',
-    role: 'Cultural Team Member',
-    image: '/images/Mansi.jpg'
-},
-
-{
-    name: 'Kriti Singh',
-    role: 'Cultural Team Member',
-    image: '/images/Kriti Singh.jpg'
-},
-
-{
-    name: 'Isha Parihar',
-    role: 'Cultural Team Member',
-    image: '/images/isha parihar.jpg'
-},
-
-{
-    name: 'Gayatri Gawade',
-    role: 'Cultural Team Member',
-    image: '/images/Gayatri Gawade_.png'
-},
-
-
-
-{
-    name: 'Atharva Chavan',
-    role: 'Cultural Team Member',
-    image: '/images/Atharva Chavan.jpg'
-},
-
-{
-    name: 'Arya Dhumal',
-    role: 'Cultural Team Member',
-    image: '/images/Arya Dhumal_.jpg'
-},
-
-{
-    name: 'Anish Chakrabati',
-    role: 'Cultural Team Member',
-    image: '/images/Anish Chakrabati.jpg'
-},
-
-{
-    name: 'Aditya Shinde',
-    role: 'Cultural Team Member',
-    image: '/images/Aditya Shinde.jpg'
-},
-
-{
-    name: 'Aditi Kamble',
-    role: 'Cultural Team Member',
-    image: '/images/Aditi Kamble .PNG'
-},
-
-{
-    name: 'Aayush Dalvi',
-    role: 'Cultural Team Member',
-    image: '/images/Aayush Dalvi.jpg'
-}
-
+    image: '/images/Siddhi Jadhav_culturalTeamMember.png'
+  }
 ];
+
 
 export const SocialMediaTeamMembers = [
-
   {
-    name: 'Rohit Bhat',
-    role: 'Social Media Lead',
-    image: '/images/Rohit Bhat.jpg'
+    name: 'Aditya Singh',
+    role: 'Social Media Team Lead',
+    image: '/images/Aditya Singh social media.png'
   },
-  
-{
-  name: 'Atharva pandhare',
-  role: 'Social Media Team vice Lead',
-  image: '/images/Atharva pandhare.jpg'
-},
-{
-  
-  
-  name: 'Santosh nimbalkar',
-  role: 'Social Media Team Member',
-  image: '/images/Santosh nimbalkar.jpg'
-},
-
-{
-  name: 'Atharva borkar',
-  role: 'Social Media Team Member',
-  image: '/images/Atharva borkar.JPG'
-},
-{
-  name: 'Devyanshu misal',
-  role: 'Social Media Team Member',
-  image: '/images/Devyanshu misal.jpg'
-}
-
+  {
+    name: 'Mayur',
+    role: 'Social Media Team Lead',
+    image: '/images/Mayur_Social Media Lead.jpg'
+  },
+  {
+    name: 'Abir',
+    role: 'Social Media Team Member',
+    image: '/images/Abir.jpg'
+  },
+  {
+    name: 'Insha Ansari',
+    role: 'Social Media Team Member',
+    image: '/images/Insha_Ansari_Social_Team_Member.png'
+  }
 ];
 
+
+export const ManagementTeamMembers = [
+  {
+    name: 'Suraj',
+    role: 'Management Team Lead',
+    image: '/images/Suraj.jpeg'
+  },
+  {
+    name: 'Prathamesh Kale',
+    role: 'Management Team Member',
+    image: '/images/Prathamesh Kale_D&M team.jpg'
+  },
+  {
+    name: 'Sandip',
+    role: 'Management Team Member',
+    image: '/images/Sandip_management.png'
+  },
+  {
+    name: 'Shubham',
+    role: 'Management Team Member',
+    image: '/images/Shubham Karpe_D&M Team Member.jpeg'
+  },
+  {
+    name: 'Sidhi',
+    role: 'Management Team Member',
+    image: '/images/sidhi.jpg'
+  }
+];

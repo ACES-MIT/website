@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import TeamMemberCard from './TeamMemberCard';
-import { coreTeamMembers, technicalTeamMembers,designTeamMembers,CulturalTeamMembers,FinanceTeamMembers,ContentTeamMembers,PromotionsTeamMembers,SocialMediaTeamMembers} from './teamData';
 
 const OtherTeamsSection = ({ title, members }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,48 +7,93 @@ const OtherTeamsSection = ({ title, members }) => {
 
   useEffect(() => {
     if (swipeDirection) {
-      const timer = setTimeout(() => setSwipeDirection(''), 500); 
+      const timer = setTimeout(() => setSwipeDirection(''), 500);
       return () => clearTimeout(timer);
     }
   }, [swipeDirection]);
 
   const handlePrevious = () => {
+    if (!members || members.length === 0) return;
+
     setSwipeDirection('animate-swipeRight');
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? members.length - 1 : prevIndex - 1));
+
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? members.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
+    if (!members || members.length === 0) return;
+
     setSwipeDirection('animate-swipeLeft');
-    setCurrentIndex((prevIndex) => (prevIndex === members.length - 1 ? 0 : prevIndex + 1));
+
+    setCurrentIndex((prevIndex) =>
+      prevIndex === members.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
+  // Don't render an empty team section
+  if (!members || members.length === 0) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-col items-center space-y-4 md:space-y-6 w-full mb-5 " style={{marginTop: '100px'}}>
+    <div
+      className="flex flex-col items-center space-y-4 md:space-y-6 w-full mb-5"
+      style={{ marginTop: '100px' }}
+    >
       <div className="w-full flex justify-start">
         <span className="bg-gray-800 text-white px-6 py-2 rounded-full text-lg font-medium transition-all duration-300 hover:bg-gray-700">
           {title}
         </span>
       </div>
+
       <div className="relative flex justify-center items-center w-full max-w-xs md:max-w-sm lg:max-w-md">
-        <div className={`transition-transform duration-500 ${swipeDirection}`}>
+        <div
+          className={`transition-transform duration-500 ${swipeDirection}`}
+        >
           <TeamMemberCard member={members[currentIndex]} />
         </div>
+
         <button
           className="absolute left-1 top-1/2 transform -translate-y-1/2 h-12 w-12 rounded-full bg-gray-400 text-white flex items-center justify-center transition-all duration-300 hover:bg-gray-700 pointer-events-auto"
           onClick={handlePrevious}
         >
           <span className="sr-only">Previous</span>
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
+
         <button
           className="absolute right-1 top-1/2 transform -translate-y-1/2 h-12 w-12 rounded-full bg-gray-400 text-white flex items-center justify-center transition-all duration-300 hover:bg-gray-700 pointer-events-auto"
           onClick={handleNext}
         >
           <span className="sr-only">Next</span>
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </button>
       </div>

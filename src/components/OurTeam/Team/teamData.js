@@ -16,7 +16,9 @@ export const coreTeamMembers = [
   },
   {
     name: 'Shreya Keshri',
-    role: 'Joint Secretary',
+    role: 'Joint Secretary',  
+
+    
     image: '/images/Shreya.jpg'
   },
   {

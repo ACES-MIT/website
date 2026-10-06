@@ -1,4 +1,3 @@
-import React from "react";
 import MagicBento from "../MagicBento";
 
 const EventMemories = () => {

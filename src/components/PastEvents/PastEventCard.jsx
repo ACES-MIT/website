@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight, Calendar, Users } from "lucide-react";
 
 const PastEventCard = ({ event }) => {

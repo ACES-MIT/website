@@ -1,4 +1,3 @@
-import React from 'react';
 
 // A functional component to create a gradient box
 const GradientBox = ({ top = '50%', left = '50%', width = '12rem', height = '12rem', colorStops, borderRadius = '0' }) => {

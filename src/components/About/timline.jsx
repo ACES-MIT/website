@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -18,10 +18,9 @@ import {
   FaChartPie,
   FaRocketchat,
 } from "react-icons/fa";
-// import { FetchRes } from "../service/API";
 
 const Timeline = () => {
-  const [timelineItems, setTimelineItems] = useState([
+  const [timelineItems] = useState([
     {
       year: 2022,
       Title: "HARDWARE HACKATHON",
@@ -110,38 +109,26 @@ const Timeline = () => {
     // },
   ]);
   const TimelineIcons = [
-    <FaUserCircle />,
-    <FaLeaf />,
-    <FaBullhorn />,
-    <FaSmile />,
-    <FaDatabase />,
-    <FaBars />,
-    <FaPlaneDeparture />,
-    <FaRocket />,
-    <FaLaptopCode />,
-    <FaEnvelopeOpen />,
-    <FaAd />,
-    <FaBug />,
-    <FaCamera />,
-    <FaChartPie />,
-    <FaRocketchat />,
+    FaUserCircle,
+    FaLeaf,
+    FaBullhorn,
+    FaSmile,
+    FaDatabase,
+    FaBars,
+    FaPlaneDeparture,
+    FaRocket,
+    FaLaptopCode,
+    FaEnvelopeOpen,
+    FaAd,
+    FaBug,
+    FaCamera,
+    FaChartPie,
+    FaRocketchat,
   ];
 
-  // useEffect(() => {
-  //   const FData = async () => {
-  //     try {
-  //       const response = await FetchRes("timelines");
-  //       // console.log(response.data);
-  //       setTimelineItems(response.data);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
-  //   FData();
-  // }, []);
-
   const IconAssign = () => {
-    return TimelineIcons[Math.floor(Math.random() * TimelineIcons.length)];
+    const Icon = TimelineIcons[Math.floor(Math.random() * TimelineIcons.length)];
+    return <Icon />;
   };
 
   const itemVariants = {
@@ -152,7 +139,7 @@ const Timeline = () => {
   
 
   return (
-    <div lassName="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white">
       
       <div className="bg-black text-white p-4 md:p-8 mt-8">
       

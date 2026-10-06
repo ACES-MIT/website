@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { cn } from "../../utils/cn";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
-export const FloatingNav = ({ navItems, className, logo }) => {
+export const FloatingNav = ({ navItems, logo }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

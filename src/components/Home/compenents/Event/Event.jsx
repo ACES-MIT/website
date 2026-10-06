@@ -1,4 +1,3 @@
-import React from "react";
 import EventCard from "./EventCard.jsx";
 import { EventData } from "./EventData.js";
 

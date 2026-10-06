@@ -17,8 +17,6 @@ import Community from "./components/JoinCommunity";
 import { PageNotFound } from "./components/404";
 import Login from "./components/Login/Login";
 import TermsAndConditions from "./components/TermsAndConditions/TermsAndConditions";
-import PaymentTerms from "./components/PaymentTerms/PaymentTerms";
-import RazorpayRequirements from "./components/RazorpayRequirements/RazorpayRequirements";
 import ScrollToTop from "./components/ScrollToTop";
 import PastEvents from "./components/PastEvents/PastEvents";
 
@@ -56,11 +54,6 @@ function App() {
           <Route
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
-          />
-          <Route path="/payment-terms" element={<PaymentTerms />} />
-          <Route
-            path="/razorpay-requirements"
-            element={<RazorpayRequirements />}
           />
           <Route path="/error" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="/error" />} />

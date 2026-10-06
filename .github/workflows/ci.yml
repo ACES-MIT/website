@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+  # Non-blocking on purpose. The repo currently has ~135 pre-existing lint
+  # errors (113 react/prop-types, 19 no-unescaped-entities, 3 no-undef) that
+  # predate this workflow. Surfacing them here rather than blocking every PR
+  # on debt nobody has triaged yet.
+  #
+  # To make this enforcing: fix the errors, then delete this job's
+  # `continue-on-error: true` and merge it into the build job.
+  lint:
+    name: Lint (reporting only)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint

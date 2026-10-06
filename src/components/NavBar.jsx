@@ -1,4 +1,3 @@
-import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
 import { IconUser, IconUsers, IconLogin, IconCalendarEvent,IconHistory } from "@tabler/icons-react";
 import logo from './logo.png';

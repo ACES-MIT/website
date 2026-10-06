@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 // removed useNavigate - external registration opened in new tab
 import ReactCardFlip from "react-card-flip";
-import { Calendar, Users, Clock, ArrowRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const RegisterButton = ({ isClosed, link }) => {
   const handleRegister = (e) => {

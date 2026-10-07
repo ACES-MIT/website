@@ -7,7 +7,7 @@ export const pastEventsData = [
     category: "Social",
     description: "Ceremonial transition of responsibilities from the outgoing ACES core team to the newly elected members, fostering continuity and leadership.",
     images: [
-      "/Handover/6.jpg", "/Handover/7.jpg", "/Handover/11.jpg"
+      "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Handover/6.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Handover/7.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Handover/11.jpg"
     ]
   },
   {
@@ -18,7 +18,7 @@ export const pastEventsData = [
     category: "Cultural",
     description: "An intercollege cultural celebration of women empowerment featuring music, dance, poetry, drama, and inspiring guest addresses.",
     images: [
-      "/Shakti 2.0/25.jpg", "/Shakti 2.0/26.jpg", "/Shakti 2.0/27.jpg","/Shakti 2.0/28.jpg"
+      "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Shakti 2.0/25.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Shakti 2.0/26.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Shakti 2.0/27.jpg","https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Shakti 2.0/28.jpg"
     ]
   },
   {
@@ -29,7 +29,7 @@ export const pastEventsData = [
     category: "Awareness",
     description: "An environmental sustainability initiative promoting green cover, social responsibility, and eco-consciousness on campus.",
     images: [
-     "/Tree Plantation/36.jpg", "/Tree Plantation/37.png", "/Tree Plantation/38.png"
+     "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Tree Plantation/36.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Tree Plantation/37.png", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Tree Plantation/38.png"
     ]
   },
   {
@@ -40,7 +40,7 @@ export const pastEventsData = [
     category: "Technical",
     description: "A guidance-focused intercollege event connecting students with alumni and experts to provide academic, career, and skill-development roadmaps.",
     images: [
-    "/Vision Voyage/46.jpg", "/Vision Voyage/47.jpg", "/Vision Voyage/48.jpg","/Vision Voyage/49.jpg"
+    "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Vision Voyage/46.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Vision Voyage/47.jpg", "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Vision Voyage/48.jpg","https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/Vision Voyage/49.jpg"
     ]
   },
   {
@@ -51,9 +51,9 @@ export const pastEventsData = [
     category: "Cultural",
     description: "A heartfelt celebration honoring faculty through performances, speeches, and appreciation activities organized by ACES.",
     images: [
-      "/T-day/61.jpg",
-      "/T-day/62.jpg",
-      "/T-day/63.jpg"
+      "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/T-day/61.jpg",
+      "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/T-day/62.jpg",
+      "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/T-day/63.jpg"
     ]
   }
 ];
@@ -73,7 +73,7 @@ export const eventMemoriesData = [
     tag: "Club Catalyst",
     title: "Best Club Award 2024",
     description: "Club catalyst winners 2024",
-    image: "/BestTeam/IMG_2015.jpg",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2015.jpg",
     size: "small"
   },
   {
@@ -81,7 +81,7 @@ export const eventMemoriesData = [
     tag: "Unity",
     title: "Team Building",
     description: "Strengthening bonds together",
-    image: "/BestTeam/IMG_2645.jpg",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2645.jpg",
     size: "small"
   },
   {
@@ -89,7 +89,7 @@ export const eventMemoriesData = [
     tag: "Knowledge",
     title: "Workshop Series",
     description: "Hands-on learning experience",
-    image: "/BestTeam/IMG_2726.jpg",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2726.jpg",
     size: "large"
   },
   {
@@ -97,7 +97,7 @@ export const eventMemoriesData = [
     tag: "Together",
     title: "Community Day",
     description: "Celebrating our achievements",
-    image: "/BestTeam/IMG_4183.JPG",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_4183.JPG",
     size: "medium"
   },
   {
@@ -105,7 +105,7 @@ export const eventMemoriesData = [
     tag: "Innovation",
     title: "Hackathon",
     description: "Coding through the night",
-    image: "/BestTeam/IMG_5458.jpg",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_5458.jpg",
     size: "small"
   },
   {
@@ -113,7 +113,7 @@ export const eventMemoriesData = [
     tag: "Community",
     title: "Club Activities",
     description: "Creating memorable moments",
-    image: "/BestTeam/club.jpg",
+    image: "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/club.jpg",
     size: "small"
   }
 ];

@@ -12,42 +12,42 @@ const cardData = [
     title: 'Tech Summit 2024',
     description: 'Industry leaders sharing insights',
     label: 'Innovation',
-    image: '/BestTeam/IMG_2015.jpg'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2015.jpg'
   },
   {
     color: '#060010',
     title: 'Team Building',
     description: 'Strengthening bonds together',
     label: 'Unity',
-    image: '/BestTeam/IMG_2645.jpg'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2645.jpg'
   },
   {
     color: '#060010',
     title: 'Workshop Series',
     description: 'Hands-on learning experience',
     label: 'Knowledge',
-    image: '/BestTeam/IMG_2726.jpg'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_2726.jpg'
   },
   {
     color: '#060010',
     title: 'Community Day',
     description: 'Celebrating our achievements',
     label: 'Together',
-    image: '/BestTeam/IMG_4183.JPG'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_4183.JPG'
   },
   {
     color: '#060010',
     title: 'Hackathon',
     description: 'Coding through the night',
     label: 'Innovation',
-    image: '/BestTeam/IMG_5458.jpg'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/IMG_5458.jpg'
   },
   {
     color: '#060010',
     title: 'Club Activities',
     description: 'Creating memorable moments',
     label: 'Community',
-    image: '/BestTeam/club.jpg'
+    image: 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam/club.jpg'
   }
 ];
 

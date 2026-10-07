@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import TeamMemberCard from './TeamMemberCard';
+
+const memberPropType = PropTypes.shape({
+  image: PropTypes.string,
+  name: PropTypes.string,
+  role: PropTypes.string,
+});
 
 const OtherTeamsSection = ({ title, members }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -99,6 +106,11 @@ const OtherTeamsSection = ({ title, members }) => {
       </div>
     </div>
   );
+};
+
+OtherTeamsSection.propTypes = {
+  title: PropTypes.string,
+  members: PropTypes.arrayOf(memberPropType),
 };
 
 export default OtherTeamsSection;

@@ -1,10 +1,13 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
+import PropTypes from 'prop-types';
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
 const DEFAULT_GLOW_COLOR = '132, 0, 255';
 const MOBILE_BREAKPOINT = 768;
+
+const gridRefPropType = PropTypes.shape({ current: PropTypes.any });
 
 const cardData = [
   {
@@ -826,6 +829,45 @@ const MagicBento = ({
       </BentoCardGrid>
     </>
   );
+};
+
+ParticleCard.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  disableAnimations: PropTypes.bool,
+  style: PropTypes.object,
+  particleCount: PropTypes.number,
+  glowColor: PropTypes.string,
+  enableTilt: PropTypes.bool,
+  clickEffect: PropTypes.bool,
+  enableMagnetism: PropTypes.bool
+};
+
+GlobalSpotlight.propTypes = {
+  gridRef: gridRefPropType,
+  disableAnimations: PropTypes.bool,
+  enabled: PropTypes.bool,
+  spotlightRadius: PropTypes.number,
+  glowColor: PropTypes.string
+};
+
+BentoCardGrid.propTypes = {
+  children: PropTypes.node,
+  gridRef: gridRefPropType
+};
+
+MagicBento.propTypes = {
+  textAutoHide: PropTypes.bool,
+  enableStars: PropTypes.bool,
+  enableSpotlight: PropTypes.bool,
+  enableBorderGlow: PropTypes.bool,
+  disableAnimations: PropTypes.bool,
+  spotlightRadius: PropTypes.number,
+  particleCount: PropTypes.number,
+  enableTilt: PropTypes.bool,
+  glowColor: PropTypes.string,
+  clickEffect: PropTypes.bool,
+  enableMagnetism: PropTypes.bool
 };
 
 export default MagicBento;

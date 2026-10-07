@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { cn } from "../../utils/cn";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
 const HIDE_AFTER_PROGRESS = 0.05;
 const HIDE_OFFSET = "-translate-y-[100px]";
+
+const navItemPropType = PropTypes.shape({
+  name: PropTypes.string,
+  link: PropTypes.string,
+  icon: PropTypes.node,
+  isButton: PropTypes.bool,
+});
 
 export const FloatingNav = ({ navItems, logo }) => {
   const [visible, setVisible] = useState(true);
@@ -132,4 +140,9 @@ export const FloatingNav = ({ navItems, logo }) => {
       </div>
     </>
   );
+};
+
+FloatingNav.propTypes = {
+  navItems: PropTypes.arrayOf(navItemPropType),
+  logo: PropTypes.node,
 };

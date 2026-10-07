@@ -11,8 +11,8 @@ export const PageNotFound = () => {
         </div>
         <h1 className="text-6xl font-bold mb-4">NOT FOUND</h1>
         <p className="text-lg mb-8">
-          Oops! It seems the page you're looking for doesn't exist. Don't worry,
-          let's get you back to the homepage where you can explore more.
+          Oops! It seems the page you&apos;re looking for doesn&apos;t exist. Don&apos;t worry,
+          let&apos;s get you back to the homepage where you can explore more.
         </p>
         <a
           href="/"

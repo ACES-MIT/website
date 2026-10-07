@@ -1,4 +1,11 @@
+import PropTypes from 'prop-types';
 import TeamMemberCard from './TeamMemberCard';
+
+const memberPropType = PropTypes.shape({
+  image: PropTypes.string,
+  name: PropTypes.string,
+  role: PropTypes.string,
+});
 
 const CoreTeamSection = ({ members }) => {
   return (
@@ -19,6 +26,10 @@ const CoreTeamSection = ({ members }) => {
       </div>
     </section>
   );
+};
+
+CoreTeamSection.propTypes = {
+  members: PropTypes.arrayOf(memberPropType),
 };
 
 export default CoreTeamSection;

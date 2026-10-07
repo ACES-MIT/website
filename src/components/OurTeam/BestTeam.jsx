@@ -99,13 +99,15 @@ const AnimatedTeamDisplay = () => {
     md:h-[440px] md:w-[440px] sm:h-[220px] sm:w-[220px] sm:rounded-[40px]
   `;
 
+  const CLD = 'https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/BestTeam';
+
   const images = [
-    'url(BestTeam/IMG_2015.jpg)',
-    'url(BestTeam/IMG_2645.jpg)',
-    'url(BestTeam/IMG_5458.jpg)',
-    'url(BestTeam/club.jpg)',
-    'url(BestTeam/IMG_4183.JPG)',
-    'url(BestTeam/IMG_2726.jpg)',
+    `url(${CLD}/IMG_2015.jpg)`,
+    `url(${CLD}/IMG_2645.jpg)`,
+    `url(${CLD}/IMG_5458.jpg)`,
+    `url(${CLD}/club.jpg)`,
+    `url(${CLD}/IMG_4183.JPG)`,
+    `url(${CLD}/IMG_2726.jpg)`,
     'url()',
     'url()'
   ];

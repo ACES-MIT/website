@@ -19,6 +19,22 @@ const OtherTeamsSection = ({ title, members }) => {
     }
   }, [swipeDirection]);
 
+  // Warm the neighbouring photos so next/prev swaps from cache, not the network.
+  // ±2 keeps a fast double-click warm; offsets wrap, so short teams just reload
+  // the same URL (the browser cache absorbs it).
+  useEffect(() => {
+    if (!members || members.length === 0) return;
+
+    [-2, -1, 1, 2].forEach((offset) => {
+      const neighbour =
+        members[(currentIndex + offset + members.length) % members.length];
+
+      if (neighbour && neighbour.image) {
+        new Image().src = neighbour.image;
+      }
+    });
+  }, [currentIndex, members]);
+
   const handlePrevious = () => {
     if (!members || members.length === 0) return;
 

@@ -70,15 +70,15 @@ module.exports = {
   			'sf-pro': [
   				'-apple-system',
   				'BlinkMacSystemFont',
-  				'Segoe UI"',
+  				'Segoe UI',
   				'Roboto',
-  				'Helvetica Neue"',
+  				'Helvetica Neue',
   				'Arial',
   				'sans-serif'
   			]
   		},
   		transform: {
-  			'3d': 'preserv-3d'
+  			'3d': 'preserve-3d'
   		},
   		rotate: {
   			'x-180': 'rotateX(180deg)'

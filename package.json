@@ -1,7 +1,9 @@
 {
-  "name": "my-react-app",
+  "name": "aces-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Official website for ACES, MIT ADT University",
+  "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "dev": "vite",

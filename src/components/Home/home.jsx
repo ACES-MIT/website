@@ -1,10 +1,9 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import logo from "./logo.png";
 import WhatWeDo from "./compenents/whatwedo/WWD_tab";
 import StatsSection from "./compenents/statusCard/status";
 import Event from "./compenents/Event/Event";
 import Faculty from "./compenents/faculty/Label";
-import useIntersectionObserver from "../useIntersectionObserver";
 import GradientBox from "../gradient";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -21,7 +20,6 @@ function Home() {
     onTop();
   }, [routePath]);
 
-  const [isOpen, setIsOpen] = useState(false);
   const logoRef = useRef(null);
   const textRef = useRef(null);
 
@@ -176,73 +174,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
-// import React, { useState, useEffect } from 'react';
-
-// const CountingNumber = ({ end, duration = 2000 }) => {
-//   const [count, setCount] = useState(0);
-
-//   useEffect(() => {
-//     let startTimestamp = null;
-//     const endNum = parseInt(end);
-    
-//     const animate = (timestamp) => {
-//       if (!startTimestamp) startTimestamp = timestamp;
-//       const progress = timestamp - startTimestamp;
-      
-//       const progressPercentage = Math.min(progress / duration, 1);
-//       const currentCount = Math.floor(progressPercentage * endNum);
-      
-//       setCount(currentCount);
-      
-//       if (progressPercentage < 1) {
-//         requestAnimationFrame(animate);
-//       } else {
-//         setCount(endNum);
-//       }
-//     };
-    
-//     requestAnimationFrame(animate);
-//   }, [end, duration]);
-
-//   return (
-//     <span className="text-[56px] sm:text-[56px] md:text-[80px] font-bold text-white mb-2">
-//       {count}{end.toString().endsWith('+') ? '+' : ''}
-//     </span>
-//   );
-// };
-
-// const StatItem = ({ number, label }) => (
-//   <div className="flex flex-col items-center px-4 md:px-0">
-//     <CountingNumber end={number} />
-//     <span className="text-sm md:text-lg text-gray-300 text-center">{label}</span>
-//   </div>
-// );
-
-// const StatsSection = () => {
-//   return (
-//     <div className="bg-[#0e0d0d] text-white py-16 px-4 sm:px-6">
-//       <div className="container mx-auto max-w-6xl">
-//         <div className="border-t border-t-white border-opacity-25 rounded-3xl">
-//           {/* Centered header across all screen sizes */}
-//           <div className="-mt-5 mb-10 flex justify-center">
-//             <h2 className="mt-9 text-base font-medium bg-[#1C1C1C] inline-block py-3 rounded-full border-t border-t-white border-opacity-25 px-10">
-//               OUR STATS 
-//             </h2>
-//           </div>
-
-//           {/* Centered stat items */}
-//           <div className="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-8 md:gap-24 pb-10">
-//             <StatItem number="6" label="Years of Experience" />
-//             <StatItem number="99+" label="Aspiring minds" />
-//             <StatItem number="26" label="Events" />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-// export default StatsSection;

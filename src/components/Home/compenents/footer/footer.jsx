@@ -1,4 +1,3 @@
-import React from 'react';
 import ACES from "./ACESLogo.jpeg"  /*   black_bg: "#111111", add this in congif css as colour*/ 
 
 const InstagramIcon = () => (

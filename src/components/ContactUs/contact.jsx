@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 
@@ -21,10 +21,10 @@ const ContactPage = () => {
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Call Us",
-      subtitle: "Mon-Fri from 9am to 5pm",
-      content: ["Aayush: +91 92267 50350", "Shivam: +91 90652 61815"],
-      link: ["tel:+919226750350", "tel:+919065261815"],
+      title: "Message Us",
+      subtitle: "Join our community group",
+      content: "ACES WhatsApp Community",
+      link: "https://chat.whatsapp.com/LSoSVdHx0cz1FfvCh3eDqk",
     },
     {
       icon: <MapPin className="w-6 h-6" />,

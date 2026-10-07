@@ -1,4 +1,3 @@
-import React from 'react';
 import TeamMemberCard from './TeamMemberCard';
 
 const CoreTeamSection = ({ members }) => {

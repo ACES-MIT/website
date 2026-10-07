@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import ACES from "../assets/ACESLogo.jpeg"  /*   black_bg: "#111111", add this in congif css as colour*/ 
 import  '../index.css';
@@ -94,23 +93,10 @@ const Footer = () => {
             >
               Terms & Conditions
             </Link>
-            <Link 
-              to="/payment-terms" 
-              className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
-            >
-              Payment Terms
-            </Link>
-            <Link 
-              to="/razorpay-requirements" 
-              className="text-gray-300 hover:text-white transition-colors duration-300 text-sm"
-            >
-              Payment Info
-            </Link>
           </div>
-          
+
           <div className="text-gray-400 text-xs text-center md:text-right">
             <p>&copy; 2026 ACES - All rights reserved.</p>
-            <p>Secured payments by Razorpay</p>
           </div>
         </div>
       </div>

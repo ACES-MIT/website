@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 const CountingNumber = ({ end, duration = 2000 }) => {
   const [count, setCount] = useState(0);
@@ -81,6 +82,17 @@ const StatsSection = () => {
       </div>
     </section>
   );
+};
+
+CountingNumber.propTypes = {
+  end: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  duration: PropTypes.number,
+};
+
+StatItem.propTypes = {
+  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  label: PropTypes.string,
+  delay: PropTypes.number,
 };
 
 export default StatsSection;

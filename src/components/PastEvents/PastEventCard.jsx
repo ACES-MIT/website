@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { ChevronLeft, ChevronRight, Calendar, Users } from "lucide-react";
 
 const PastEventCard = ({ event }) => {
@@ -106,6 +107,17 @@ const PastEventCard = ({ event }) => {
       </div>
     </div>
   );
+};
+
+PastEventCard.propTypes = {
+  event: PropTypes.shape({
+    images: PropTypes.arrayOf(PropTypes.string),
+    category: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    participants: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    description: PropTypes.string,
+  }),
 };
 
 export default PastEventCard;

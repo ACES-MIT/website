@@ -1,5 +1,6 @@
 import { useState } from "react";
 // removed useNavigate - external registration opened in new tab
+import PropTypes from "prop-types";
 import ReactCardFlip from "react-card-flip";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
@@ -68,6 +69,9 @@ const EventCard = ({ data }) => {
       )}
     </div>
   );
+  CardContent.propTypes = {
+    children: PropTypes.node,
+  };
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -128,6 +132,23 @@ const EventCard = ({ data }) => {
       </ReactCardFlip>
     </div>
   );
+};
+
+RegisterButton.propTypes = {
+  isClosed: PropTypes.bool,
+  link: PropTypes.string,
+};
+
+EventCard.propTypes = {
+  data: PropTypes.shape({
+    Image: PropTypes.string,
+    Name: PropTypes.string,
+    Details: PropTypes.string,
+    MInfo: PropTypes.string,
+    AInfo: PropTypes.string,
+    isRegistrationClosed: PropTypes.bool,
+    Link: PropTypes.string,
+  }),
 };
 
 export default EventCard;

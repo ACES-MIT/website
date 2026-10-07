@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const Faculty = ({ Name, position, Image }) => {
   return (
@@ -27,6 +28,12 @@ const Faculty = ({ Name, position, Image }) => {
       </div>
     </div>
   );
+};
+
+Faculty.propTypes = {
+  Name: PropTypes.string,
+  position: PropTypes.string,
+  Image: PropTypes.string,
 };
 
 export default Faculty;

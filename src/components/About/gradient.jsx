@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 // A functional component to create a gradient box
 const GradientBox = ({ top = '50%', left = '50%', width = '12rem', height = '12rem', colorStops, borderRadius = '0' }) => {
@@ -22,6 +23,15 @@ const GradientBox = ({ top = '50%', left = '50%', width = '12rem', height = '12r
 GradientBox.defaultProps = {
   colorStops: [['rgba(255, 0, 230, 1)', '0%'], ['rgba(250, 47, 230, 0.5)', '30%'], ['rgba(0, 0, 0, 0)', '60%']],
   borderRadius: '50%' // Default border radius
+};
+
+GradientBox.propTypes = {
+  top: PropTypes.string,
+  left: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  colorStops: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
+  borderRadius: PropTypes.string,
 };
 
 export default GradientBox;

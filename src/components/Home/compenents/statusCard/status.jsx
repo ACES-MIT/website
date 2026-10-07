@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const CountingNumber = ({ end, duration = 2000 }) => {
   const [count, setCount] = useState(0);
@@ -63,4 +64,14 @@ const StatsSection = () => {
     </div>
   );
 };
+CountingNumber.propTypes = {
+  end: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  duration: PropTypes.number,
+};
+
+StatItem.propTypes = {
+  number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  label: PropTypes.string,
+};
+
 export default StatsSection;

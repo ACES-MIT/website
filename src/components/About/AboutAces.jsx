@@ -54,7 +54,7 @@ function AboutAces() {
             className="group relative inline-block"
           >
             <p className="text-xl md:text-3xl font-light text-purple-200/90 italic tracking-wide">
-              "For the Students, By the Students"
+              &quot;For the Students, By the Students&quot;
             </p>
             {/* Subtle underline decoration */}
             <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-700 group-hover:w-full opacity-70"></span>

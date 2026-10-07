@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const GradientBox = ({ position, width = '12rem', height = '12rem', colorStops = [['rgba(255, 0, 230, 1)', '0%'], ['rgba(250, 47, 230, 0.5)', '30%'], ['rgba(0, 0, 0, 0)', '60%']] }) => {
   const gradientStops = colorStops.map(([color, stop]) => `${color} ${stop}`).join(', ');
@@ -17,6 +18,16 @@ const GradientBox = ({ position, width = '12rem', height = '12rem', colorStops =
       style={style}
     ></div>
   );
+};
+
+GradientBox.propTypes = {
+  position: PropTypes.shape({
+    top: PropTypes.string,
+    left: PropTypes.string,
+  }),
+  width: PropTypes.string,
+  height: PropTypes.string,
+  colorStops: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
 };
 
 export default GradientBox;

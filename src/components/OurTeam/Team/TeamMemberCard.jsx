@@ -1,3 +1,10 @@
+import PropTypes from 'prop-types';
+
+const memberPropType = PropTypes.shape({
+  image: PropTypes.string,
+  name: PropTypes.string,
+  role: PropTypes.string,
+});
 
 const TeamMemberCard = ({ member }) => {
   return (
@@ -29,6 +36,10 @@ const TeamMemberCard = ({ member }) => {
       </div>
     </div>
   );
+};
+
+TeamMemberCard.propTypes = {
+  member: memberPropType,
 };
 
 export default TeamMemberCard;

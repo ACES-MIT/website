@@ -28,7 +28,7 @@ function MoreInfo() {
             className="md:w-3/4 flex flex-col space-y-8"
           >
             <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed font-light text-gray-200">
-              ACES, the oldest and largest club at MIT ADT University's School of Computing, is a vibrant techno-cultural organization. We empower students with opportunities that go beyond academics, nurturing <span className="text-purple-400">leadership</span>, <span className="text-pink-400">technical expertise</span>, and <span className="text-purple-400">cultural interests</span>.
+              ACES, the oldest and largest club at MIT ADT University&apos;s School of Computing, is a vibrant techno-cultural organization. We empower students with opportunities that go beyond academics, nurturing <span className="text-purple-400">leadership</span>, <span className="text-pink-400">technical expertise</span>, and <span className="text-purple-400">cultural interests</span>.
             </p>
 
             <div className="h-px w-full bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800" />

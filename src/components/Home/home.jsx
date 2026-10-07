@@ -70,7 +70,7 @@ function Home() {
           </div>
 
           <p className="mt-6 text-lg">
-          "For the Students By the Students"
+          &quot;For the Students By the Students&quot;
             
           </p>
           <p className="text-gray-400 max-w-md mx-auto">
@@ -101,7 +101,7 @@ function Home() {
               <div className="flex flex-col items-start">
                 <div className="inline-block">
                   <span className="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-4 block">
-                    What's Happening
+                    What&apos;s Happening
                   </span>
                   <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
                     Upcoming Events
@@ -109,7 +109,7 @@ function Home() {
                   <div className="w-20 h-1 bg-white rounded-full mb-6"></div>
                 </div>
                 <p className="text-lg text-gray-400 leading-relaxed max-w-lg">
-                  Discover our latest events and join our vibrant community. From technical workshops to cultural celebrations, there's something for everyone.
+                  Discover our latest events and join our vibrant community. From technical workshops to cultural celebrations, there&apos;s something for everyone.
                 </p>
               </div>
             </div>

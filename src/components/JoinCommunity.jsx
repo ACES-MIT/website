@@ -7,7 +7,7 @@ const Community = () => {
       <div
         className="flex items-center justify-center h-full bg-black w-full rounded-lg overflow-hidden"
         style={{
-          backgroundImage: 'url(https://framerusercontent.com/images/ETRqNWWMBEeXF5D05OggGRFDeec.jpg)',
+          backgroundImage: 'url(https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/assets/joinCommunity.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -1,6 +1,6 @@
 
 
-import Try from "../../../../assets/ACD.jpg";
+const Try = "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/assets/ACD.jpg";
 
 export const EventData = [
    {

@@ -1,18 +1,16 @@
-
-
-const Try = "https://res.cloudinary.com/huwutzey/image/upload/f_auto,q_auto/assets/ACD.jpg";
+import Try from "../../../../assets/shakti-3.png";
 
 export const EventData = [
-   {
-    id: "acd-2k26",
-    Name: "ACES Community day - ACD 2k26",
+  {
+    id: "shakti-3.0",
+    Name: "Shakti 3.0",
     About: "is a flagship two-day technology event and community celebration.",
     Date: "28-1-2026 & 29-1-2026",
-    Details: "ACES Community day 2k26",
+    Details: "Shakti 3.0",
     MInfo: "Date: 28–29 Jan 2026",
     AInfo: "Time: 8am – 5pm • Venue: Urmilatai Karad Auditorium, MIT ADT Pune",
-    Link: "https://acd.acesmitadt.com/",
+    Link: "https://tally.so/r/lbP9do",
     Image: Try,
-    isRegistrationClosed: false
+    isRegistrationClosed: false,
   },
 ];

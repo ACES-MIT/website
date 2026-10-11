@@ -9,7 +9,7 @@ export const EventData = [
     Details: "Shakti 3.0",
     MInfo: "Date: 26th October 2026",
     AInfo: "Time: 9am - 4pm • Venue: Urmilatai Karad Auditorium, MIT ADT Pune",
-    Link: "https://jamao.in/e/shakti-3-0",
+    Link: "https://docs.google.com/forms/d/e/1FAIpQLSetvEa_k4kB03ejeQgPBsGPlhy4oH-_bgWLMyumJ4MfKkZWvQ/viewform?usp=publish-editor",
     Image: Try,
     isRegistrationClosed: false,
   },

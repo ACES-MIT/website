@@ -10,7 +10,7 @@ const Navbar = () => {
       icon: <IconUser className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Past Events",
+      name: "Events",
       link: "/past-events",
       icon: <IconHistory className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },

@@ -4,13 +4,17 @@ export const EventData = [
   {
     id: "shakti-3.0",
     Name: "Shakti 3.0",
-    About: "To create a divine feminine energy this navratri.",
-    Date: "28-1-2026 & 29-1-2026",
+    About: "To create a divine feminine energy this Navratri.",
+    Date: "26-10-2026",
     Details: "Shakti 3.0",
     MInfo: "Date: 26th October 2026",
-    AInfo: "Time: 9am - 4pm • Venue: Urmilatai Karad Auditorium, MIT ADT Pune",
-    Link: "https://docs.google.com/forms/d/e/1FAIpQLSetvEa_k4kB03ejeQgPBsGPlhy4oH-_bgWLMyumJ4MfKkZWvQ/viewform?usp=publish-editor",
+    AInfo:
+      "Time: 9am - 4pm • Venue: Urmilatai Karad Auditorium, MIT ADT Pune",
+    Link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSetvEa_k4kB03ejeQgPBsGPlhy4oH-_bgWLMyumJ4MfKkZWvQ/viewform?usp=publish-editor",
     Image: Try,
     isRegistrationClosed: false,
+    status: "upcoming",
+    category: "Cultural",
   },
 ];
